@@ -3,6 +3,7 @@ using BaseLib.Utils.NodeFactories;
 using RiasSts2.RiasSts2Code.Extensions;
 using Godot;
 using MegaCrit.Sts2.Core.Entities.Characters;
+using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
@@ -16,11 +17,11 @@ public class RiasSts2 : PlaceholderCharacterModel
 {
     public const string CharacterId = "RiasSts2";
 
-    public static readonly Color Color = new("ffffff");
+    public static readonly Color Color = new("721e1e");
 
     public override Color NameColor => Color;
     public override CharacterGender Gender => CharacterGender.Neutral;
-    public override int StartingHp => 70;
+    public override int StartingHp => 80;
 
     public override IEnumerable<CardModel> StartingDeck =>
     [
@@ -60,7 +61,9 @@ public class RiasSts2 : PlaceholderCharacterModel
     }
 
     public override string CustomIconTexturePath => "character_icon_char_name.png".CharacterUiPath();
-    public override string CustomCharacterSelectIconPath => "char_select_char_name.png".CharacterUiPath();
+    public override string CustomCharacterSelectIconPath => "char_select_rias.png".CharacterUiPath();
     public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
     public override string CustomMapMarkerPath => "map_marker_char_name.png".CharacterUiPath();
+    
+    public override string CustomCharacterSelectBg => "RiasBG.png".CharacterUiPath();
 }
