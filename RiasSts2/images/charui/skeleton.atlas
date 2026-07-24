@@ -1,0 +1,41 @@
+
+skeleton.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blood
+  rotate: false
+  xy: 4, 469
+  size: 32, 27
+  orig: 34, 27
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 167, 4
+  size: 169, 147
+  orig: 169, 147
+  offset: 0, 0
+  index: -1
+red-hair
+  rotate: false
+  xy: 4, 376
+  size: 60, 44
+  orig: 60, 44
+  offset: 0, 0
+  index: -1
+body B
+  rotate: false
+  xy: 4, 4
+  size: 155, 364
+  orig: 155, 364
+  offset: 0, 0
+  index: -1
+hand
+  rotate: false
+  xy: 4, 428
+  size: 36, 33
+  orig: 43, 36
+  offset: 0, 1
+  index: -1

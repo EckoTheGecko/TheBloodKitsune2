@@ -8,6 +8,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
 using RiasSts2.RiasSts2Code.Cards;
+using RiasSts2.RiasSts2Code.Relics;
 
 namespace RiasSts2.RiasSts2Code.Character;
 
@@ -26,20 +27,20 @@ public class RiasSts2 : PlaceholderCharacterModel
     public override IEnumerable<CardModel> StartingDeck =>
     [
         ModelDb.Card<BloodClaws>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>()
+        ModelDb.Card<StrikeRias>(),
+        ModelDb.Card<StrikeRias>(),
+        ModelDb.Card<StrikeRias>(),
+        ModelDb.Card<StrikeRias>(),
+        ModelDb.Card<DefendRias>(),
+        ModelDb.Card<DefendRias>(),
+        ModelDb.Card<DefendRias>(),
+        ModelDb.Card<DefendRias>(),
+        ModelDb.Card<DefendRias>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
     [
-        ModelDb.Relic<BurningBlood>()
+        ModelDb.Relic<HiganbanaRelic>()
     ];
 
     public override CardPoolModel CardPool => ModelDb.CardPool<RiasSts2CardPool>();
@@ -60,10 +61,10 @@ public class RiasSts2 : PlaceholderCharacterModel
         }
     }
 
-    public override string CustomIconTexturePath => "character_icon_char_name.png".CharacterUiPath();
+    public override string CustomIconTexturePath => "character_icon_char_rias.png".CharacterUiPath();
     public override string CustomCharacterSelectIconPath => "char_select_rias.png".CharacterUiPath();
     public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
-    public override string CustomMapMarkerPath => "map_marker_char_name.png".CharacterUiPath();
-    
-    public override string CustomCharacterSelectBg => "RiasBG.png".CharacterUiPath();
+    public override string CustomMapMarkerPath => "map_marker_char_rias.png".CharacterUiPath();
+    public override string CustomCharacterSelectBg => "RiasBG.tscn".CharacterUiPath();
+
 }

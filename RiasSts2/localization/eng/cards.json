@@ -1,4 +1,18 @@
+
 {
-  "RIASSTS2-BLOOD_CLAWS.description": "Deal some damage twice lol",
-  "RIASSTS2-BLOOD_CLAWS.title": "BloodClaws"
+  
+  "RIASSTS2-BLOOD_CLAWS.description": "Deal {Damage:diff()} damage twice.",
+  "RIASSTS2-BLOOD_CLAWS.title": "Blood Claws",
+  
+  "RIASSTS2-STRIKE_RIAS.description": "Deal {Damage:diff()} damage.",
+  "RIASSTS2-STRIKE_RIAS.title": "Strike",
+
+  "RIASSTS2-DEFEND_RIAS.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "RIASSTS2-DEFEND_RIAS.title": "Defend",
+  
+  "RIASSTS2-GAIN_TALISMAN.description": "Give 2 Talisman",
+  "RIASSTS2-GAIN_TALISMAN.title": "Conjure Talisman",
+
+  "RIASSTS2-BLEED.description": "Lose 1 HP.\nDraw {Cards:diff()} cards.\nGain {TalismanPower:diff()} Talismans",
+  "RIASSTS2-BLEED.title": "Bleed"
 }

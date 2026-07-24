@@ -1,3 +1,9 @@
 {
-  
+  "RIASSTS2-HIGANBANA_RELIC.description": "Gain an additional [gold]Energy[/gold] on the first turn of combat.",
+  "RIASSTS2-HIGANBANA_RELIC.flavor": "Known as a Spider Lily, Death Blossom, or the Flower of the Dead.",
+  "RIASSTS2-HIGANBANA_RELIC.title": "Higanbana",
+
+  "RIASSTS2-TALISMANS_RELIC.description": "Gain a Talisman when you Lose HP from any source.",
+  "RIASSTS2-TALISMANS_RELIC.flavor": "Talismans written with blood. Incredibly explosive blood.",
+  "RIASSTS2-TALISMANS_RELIC.title": "Blood Talismans"
 }
