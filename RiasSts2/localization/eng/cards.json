@@ -1,18 +1,33 @@
 
 {
   
-  "RIASSTS2-BLOOD_CLAWS.description": "Deal {Damage:diff()} damage twice.",
+  "RIASSTS2-BLOOD_CLAWS.description": "#Deal !D! damage twice.",
   "RIASSTS2-BLOOD_CLAWS.title": "Blood Claws",
   
-  "RIASSTS2-STRIKE_RIAS.description": "Deal {Damage:diff()} damage.",
+  "RIASSTS2-STRIKE_RIAS.description": "#Deal !D! damage.",
   "RIASSTS2-STRIKE_RIAS.title": "Strike",
 
-  "RIASSTS2-DEFEND_RIAS.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "RIASSTS2-DEFEND_RIAS.description": "#Gain !B! *Block.",
   "RIASSTS2-DEFEND_RIAS.title": "Defend",
   
-  "RIASSTS2-GAIN_TALISMAN.description": "Give 2 Talisman",
-  "RIASSTS2-GAIN_TALISMAN.title": "Conjure Talisman",
+  "RIASSTS2-BLEED.description": "#Lose 1 HP.\nDraw !C! cards.\nGain !TalismanPower! Talismans",
+  "RIASSTS2-BLEED.title": "Bleed",
 
-  "RIASSTS2-BLEED.description": "Lose 1 HP.\nDraw {Cards:diff()} cards.\nGain {TalismanPower:diff()} Talismans",
-  "RIASSTS2-BLEED.title": "Bleed"
+  "RIASSTS2-BLOOD_DAGGER.description": "#Deal !D! damage for each Talisman you have.",
+  "RIASSTS2-BLOOD_DAGGER.title": "Blood Dagger",
+
+  "RIASSTS2-BLOOD_HUNT.description": "#Deal !D! damage to ALL enemies.",
+  "RIASSTS2-BLOOD_HUNT.title": "Blood Hunt",
+
+  "RIASSTS2-BLOOD_MANIPULATION.description": "#Lose all Talismans.\nGain !CalculationExtra! *Block for each Talisman lost.\n(!CalculatedBlock!)",
+  "RIASSTS2-BLOOD_MANIPULATION.title": "Blood Manipulation",
+
+  "RIASSTS2-BLOOD_TALISMANS.description": "Gain !TalismanPower! Talismans",
+  "RIASSTS2-BLOOD_TALISMANS.title": "Blood Talismans",
+
+  "RIASSTS2-BLOOD_MOON.description": "#Gain !B! [gold]Block[/gold].\nGain !TalismanPower! Talisman(s).",
+  "RIASSTS2-BLOOD_MOON.title": "Blood Moon",
+
+  "RIASSTS2-CUNNING_FOX.description": "#*Exhaust a card.\nGain !TalismanPower! Talisman.\n+Draw !C! card.+",
+  "RIASSTS2-CUNNING_FOX.title": "Cunning Fox"
 }

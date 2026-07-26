@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx4x2iu6t7jwv"
-path="res://.godot/imported/gain_talisman.png-d50a815fa02e7b1562d91c0f9cb08ff8.ctex"
+uid="uid://djbbvkum23td"
+path="res://.godot/imported/cunning_fox.png-c187a0243a3a74d59b46e16dbf7d87bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RiasSts2/images/card_portraits/gain_talisman.png"
-dest_files=["res://.godot/imported/gain_talisman.png-d50a815fa02e7b1562d91c0f9cb08ff8.ctex"]
+source_file="res://RiasSts2/images/card_portraits/big/cunning_fox.png"
+dest_files=["res://.godot/imported/cunning_fox.png-c187a0243a3a74d59b46e16dbf7d87bb.ctex"]
 
 [params]
 

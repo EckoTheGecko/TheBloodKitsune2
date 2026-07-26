@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://do2nd3fwbki7c"
-path="res://.godot/imported/gain_talisman.png-15564f7551d82cf325d49dc2674c29eb.ctex"
+uid="uid://dwqtwexb7y4n8"
+path="res://.godot/imported/blood_dagger.png-3c0a6a2dead44ef5f2e0263a876fd062.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RiasSts2/images/card_portraits/big/gain_talisman.png"
-dest_files=["res://.godot/imported/gain_talisman.png-15564f7551d82cf325d49dc2674c29eb.ctex"]
+source_file="res://RiasSts2/images/card_portraits/big/blood_dagger.png"
+dest_files=["res://.godot/imported/blood_dagger.png-3c0a6a2dead44ef5f2e0263a876fd062.ctex"]
 
 [params]
 
