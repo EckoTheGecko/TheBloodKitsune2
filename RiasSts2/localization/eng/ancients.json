@@ -2,5 +2,10 @@
   "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.0-0r.char": "I will destroy the Architect.",
   "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.0-0r.next": "*sigh* Okay, continue..",
   "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.0-1r.ancient": "UGHBLASHHHASDAS",
-  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.0-attack": "DIE! DIE! DIE!"
+  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.0-attack": "DIE! DIE! DIE!",
+
+  "RIASSTS2-INARI.epithet": "The Kitsune",
+  "RIASSTS2-INARI.talk.ANY.0-0r.ancient": "Welcome. Please, allow me to guide you on your journey.",
+  "RIASSTS2-INARI.talk.firstVisitEver.0-0.ancient": "Come forth, I shall guide you, lost soul.",
+  "RIASSTS2-INARI.title": "Inari"
 }
