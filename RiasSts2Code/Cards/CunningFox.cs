@@ -15,7 +15,7 @@ public class CunningFox() : RiasSts2Card(0,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<TalismanPower>(1), new CardsVar(0)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<TalismanPower>("TalismanPower",1), new CardsVar(0)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

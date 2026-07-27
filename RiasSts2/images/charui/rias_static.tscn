@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c25yjy6022e0h"]
+
+[ext_resource type="Texture2D" uid="uid://dt16t1ivk4x2l" path="res://RiasSts2/images/charui/rias_static.png" id="1_e6epr"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-18, -149)
+scale = Vector2(0.5531915, 0.5548446)
+texture = ExtResource("1_e6epr")

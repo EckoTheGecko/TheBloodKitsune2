@@ -18,7 +18,7 @@ public class BloodTalismans() : RiasSts2Card(1,
     TargetType.Self)
 {
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<TalismanPower>(2).WithTooltip("TALISMAN")];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<TalismanPower>("TalismanPower",2).WithTooltip("TALISMAN")];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

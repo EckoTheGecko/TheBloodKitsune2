@@ -29,5 +29,26 @@
   "RIASSTS2-BLOOD_MOON.title": "Blood Moon",
 
   "RIASSTS2-CUNNING_FOX.description": "#*Exhaust a card.\nGain !TalismanPower! Talisman.\n+Draw !C! card.+",
-  "RIASSTS2-CUNNING_FOX.title": "Cunning Fox"
+  "RIASSTS2-CUNNING_FOX.title": "Cunning Fox",
+
+  "RIASSTS2-TERROR.description": "#Deal !D! damage.\nApply !VulnerablePower! *Vulnerable.",
+  "RIASSTS2-TERROR.title": "Terror",
+
+  "RIASSTS2-IGNIS_SANGUIS.description": "#Deal !D! damage.\nLose !HpLoss! HP.",
+  "RIASSTS2-IGNIS_SANGUIS.title": "Ignis Sanguis",
+
+  "RIASSTS2-FERAL_CLAWS.description": "#Deal !D! damage 4 times.",
+  "RIASSTS2-FERAL_CLAWS.title": "Feral Claws",
+
+  "RIASSTS2-LETHAL_CRESCENT.description": "#Lose !HpLoss! HP. Deal !D! damage to ALL enemies.",
+  "RIASSTS2-LETHAL_CRESCENT.title": "Lethal Crescent",
+
+  "RIASSTS2-SANGUIS_VITAE.description": "#Deal !D! damage twice.\n Gain !B! *Block.",
+  "RIASSTS2-SANGUIS_VITAE.title": "Sanguis Vitae",
+
+  "RIASSTS2-TAIL_SLASH.description": "#Deal !D! damage to ALL enemies.\nApply !VulnerablePower! *Vulnerable to ALL enemies.",
+  "RIASSTS2-TAIL_SLASH.title": "Tail Slash",
+
+  "RIASSTS2-TAKEDOWN.description": "#Deal !D! damage for each skill in your hand.\n Hits !CalculatedHits! times.",
+  "RIASSTS2-TAKEDOWN.title": "Takedown"
 }
