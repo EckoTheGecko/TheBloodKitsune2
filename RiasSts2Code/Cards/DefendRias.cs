@@ -13,7 +13,7 @@ public class DefendRias() : RiasSts2Card(1,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(5, ValueProp.Move)];
-
+    protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend];
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)

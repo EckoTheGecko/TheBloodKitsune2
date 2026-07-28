@@ -1,4 +1,7 @@
 {
   "TALISMAN.title": "Talisman",
-  "TALISMAN.description": "Talismans detonate at the end of your turn, dealing 4 damage to ALL enemies."
+  "TALISMAN.description": "Talismans detonate at the end of your turn, dealing 4 damage to ALL enemies.",
+
+  "TALISMAN_POWER.title": "Talisman",
+  "TALISMAN_POWER.description": "Talismans detonate at the end of your turn, dealing 4 damage to ALL enemies."
 }

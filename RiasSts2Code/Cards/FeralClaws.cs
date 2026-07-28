@@ -9,7 +9,7 @@ namespace RiasSts2.RiasSts2Code.Cards;
 
 
 public class FeralClaws() : RiasSts2Card(1,
-    CardType.Attack, CardRarity.Ancient,
+    CardType.Attack, CardRarity.Ancient, //Ancient means it won't show up anywhere else, ever
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>

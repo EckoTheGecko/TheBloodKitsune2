@@ -1,4 +1,5 @@
 ﻿﻿using BaseLib.Cards.Variables;
+ using BaseLib.Extensions;
  using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -20,20 +21,14 @@ public class BloodManipulation() : RiasSts2Card(1,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-       //  new CalculationBaseVar(0),
-       // new CalculationExtraVar(DynamicVars["blockies"].BaseValue),
-       //  new CalculationExtraVar(2),
-       //  new CalculatedBlockVar(ValueProp.Move)
-       ..MakeCalculatedBlock(0, (card, target) => card.Owner.Creature.GetPowerAmount<TalismanPower>(),2)];
+       ..MakeCalculatedBlock(0, (card, target) => card.Owner.Creature.GetPowerAmount<TalismanPower>(),2), 
+       new PowerVar<TalismanPower>("TalismanPower",0).WithTooltip("TALISMAN")]; //Here just to add a tooltip
       
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        // int amount = Owner.Creature.GetPowerAmount<TalismanPower>();
-        // if (amount <= 0)
-        //     return;
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.CalculatedBlock.Calculate(Owner.Creature), this.DynamicVars.CalculatedBlock.Props, play);
         await PowerCmd.Remove<TalismanPower>(Owner.Creature);
     }

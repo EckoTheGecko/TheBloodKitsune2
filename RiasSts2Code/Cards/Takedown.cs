@@ -16,17 +16,17 @@ public class Takedown() : RiasSts2Card(1,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>[new DamageVar(5, ValueProp.Move),
         ..MakeCalculatedVar("CalculatedHits", 0,(card,_)=> PileType.Hand.GetPile(card.Owner).Cards.Count(c => c.Type == CardType.Skill))];
-
+        //stores how many cards in hand are skills
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        int hitCount = (int)((CalculatedVar)DynamicVars["CalculatedHits"]).Calculate(play.Target);
+        int hitCount = (int)((CalculatedVar)DynamicVars["CalculatedHits"]).Calculate(play.Target); //performs calculation for above var
         
         await DamageCmd.Attack(DynamicVars.Damage.BaseValue)
             .FromCard(this)
             .Targeting(play.Target)
-            .WithHitCount(hitCount)
+            .WithHitCount(hitCount) //hits equal to the calc'd number above
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
     }

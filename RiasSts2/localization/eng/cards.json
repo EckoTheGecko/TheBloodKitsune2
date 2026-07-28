@@ -22,7 +22,7 @@
   "RIASSTS2-BLOOD_MANIPULATION.description": "#Lose all Talismans.\nGain !CalculationExtra! *Block for each Talisman lost.\n(!CalculatedBlock!)",
   "RIASSTS2-BLOOD_MANIPULATION.title": "Blood Manipulation",
 
-  "RIASSTS2-BLOOD_TALISMANS.description": "Gain !TalismanPower! Talismans",
+  "RIASSTS2-BLOOD_TALISMANS.description": "#Gain !TalismanPower! Talismans",
   "RIASSTS2-BLOOD_TALISMANS.title": "Blood Talismans",
 
   "RIASSTS2-BLOOD_MOON.description": "#Gain !B! [gold]Block[/gold].\nGain !TalismanPower! Talisman(s).",
@@ -50,5 +50,11 @@
   "RIASSTS2-TAIL_SLASH.title": "Tail Slash",
 
   "RIASSTS2-TAKEDOWN.description": "#Deal !D! damage for each skill in your hand.\n Hits !CalculatedHits! times.",
-  "RIASSTS2-TAKEDOWN.title": "Takedown"
+  "RIASSTS2-TAKEDOWN.title": "Takedown",
+
+  "RIASSTS2-BLOOD_MOON_RITUAL.description": "#Gain a Talisman for each card in your *Exhaust pile. (!ExhaustPile!)\n*Exhaust",
+  "RIASSTS2-BLOOD_MOON_RITUAL.title": "Blood Moon Ritual",
+
+  "RIASSTS2-BLOOD_INSCRIPTION.description": "#If you have no Talismans, deal !D! damage.\n*Exhaust.",
+  "RIASSTS2-BLOOD_INSCRIPTION.title": "Blood Inscription"
 }
