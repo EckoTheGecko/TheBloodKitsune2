@@ -66,9 +66,11 @@ public class RiasSts2 : PlaceholderCharacterModel
     public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
     public override string CustomMapMarkerPath => "map_marker_char_rias.png".CharacterUiPath();
 
-    public override string? CustomIconOutlineTexturePath => "character_icon_outline_rias.png".CharacterUiPath();
+    public override string CustomIconOutlineTexturePath => "character_icon_outline_rias.png".CharacterUiPath();
     public override string CustomCharacterSelectBg => "RiasBG.tscn".CharacterUiPath();
-    public override string? CustomVisualPath => "rias_static.tscn".CharacterUiPath();
+    public override string CustomVisualPath => "RiasSts2/images/animations/rias_idle_anim.tscn";
+    
+    
     // public override string? CustomRestSiteAnimPath => "rias_static_rest.tscn".CharacterUiPath();
     // public override string? CustomMerchantAnimPath => "rias_static_merchant.tscn".CharacterUiPath();
 }

@@ -1,10 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://emtk08yp5w7n"]
 
-[ext_resource type="Texture2D" uid="uid://dt16t1ivk4x2l" path="res://RiasSts2/images/charui/rias_static.png" id="1_dyovm"]
+[ext_resource type="Texture2D" uid="uid://dh70wiidq7tc1" path="res://RiasSts2/images/charui/rias_static.png" id="1_dyovm"]
 
-[node name="Node2D" type="Node2D"]
+[node name="rias_static" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-18, -149)
-scale = Vector2(0.5531915, 0.5548446)
+position = Vector2(9, -175)
 texture = ExtResource("1_dyovm")

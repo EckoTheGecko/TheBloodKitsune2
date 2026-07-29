@@ -23,16 +23,20 @@ public class TalismanPower() : RiasSts2Power
 
     public override PowerStackType StackType =>
         PowerStackType.Counter;
-
+    // public int TotalDamage => 4 * Amount;
+    
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new ("TotalDamage", 4 * Amount)
+    ];
     public override async Task BeforeSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side,
         IEnumerable<Creature> participants)
     {
-        if (!participants.Contains<Creature>(this.Owner))
+        if (!participants.Contains(Owner))
             return;
         {
             this.Flash();
             await Cmd.CustomScaledWait(0.2f, 0.4f);
-            foreach (Creature hittableEnemy in (IEnumerable<Creature>)this.CombatState.HittableEnemies)
+            foreach (Creature hittableEnemy in CombatState.HittableEnemies)
             {
                 NCombatRoom instance = NCombatRoom.Instance;
                 if (instance != null)
@@ -40,7 +44,7 @@ public class TalismanPower() : RiasSts2Power
             }
 
             await Cmd.CustomScaledWait(0.2f, 0.4f);
-            await CreatureCmd.Damage(choiceContext, (IEnumerable<Creature>)this.CombatState.HittableEnemies,
+            await CreatureCmd.Damage(choiceContext, CombatState.HittableEnemies,
                 new DamageVar(this.Amount * 4, ValueProp.Unpowered), this.Owner);
             await PowerCmd.Remove(this);
         }

@@ -56,5 +56,17 @@
   "RIASSTS2-BLOOD_MOON_RITUAL.title": "Blood Moon Ritual",
 
   "RIASSTS2-BLOOD_INSCRIPTION.description": "#If you have no Talismans, deal !D! damage.\n*Exhaust.",
-  "RIASSTS2-BLOOD_INSCRIPTION.title": "Blood Inscription"
+  "RIASSTS2-BLOOD_INSCRIPTION.title": "Blood Inscription",
+
+  "RIASSTS2-BLOOD_KITSUNE.description": "#Deal !D! damage.\nHits an additional time for each Power played this combat.\nHits !powersPlayed! times.",
+  "RIASSTS2-BLOOD_KITSUNE.title": "Blood Kitsune",
+
+  "RIASSTS2-BLOOD_MOON_RIAS.description": "#Gain !BloodMoonRiasPower! *Block each time you play an Attack this turn.",
+  "RIASSTS2-BLOOD_MOON_RIAS.title": "Blood Moon Rias",
+
+  "RIASSTS2-BLOOD_SPIKES.description": "#Deal !D! damage.\n Repeats for each card in your *Exhaust pile.\n Hits !CalculatedHits! times.",
+  "RIASSTS2-BLOOD_SPIKES.title": "Blood Spikes",
+
+  "RIASSTS2-CEREMONIAL_SASH.description": "#Gain [E]\nGain !TalismanPower! Talismans.\nDraw !C! Card(s).",
+  "RIASSTS2-CEREMONIAL_SASH.title": "Ceremonial Sash"
 }
