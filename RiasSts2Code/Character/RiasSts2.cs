@@ -68,7 +68,7 @@ public class RiasSts2 : PlaceholderCharacterModel
 
     public override string CustomIconOutlineTexturePath => "character_icon_outline_rias.png".CharacterUiPath();
     public override string CustomCharacterSelectBg => "RiasBG.tscn".CharacterUiPath();
-    public override string CustomVisualPath => "RiasSts2/images/animations/rias_idle_anim.tscn";
+    public override string CustomVisualPath => "RiasSts2/images/animations/rias_anims.tscn";
     
     
     // public override string? CustomRestSiteAnimPath => "rias_static_rest.tscn".CharacterUiPath();

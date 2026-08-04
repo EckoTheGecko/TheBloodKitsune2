@@ -19,7 +19,7 @@ public class BloodMoonRitual() : RiasSts2Card(2,
     
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Strike];
 
-
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust]; //makes it exhaust after player and adds the word to the bottom of card automatically
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
@@ -28,7 +28,6 @@ public class BloodMoonRitual() : RiasSts2Card(2,
         int taliGained = (int)((CalculatedVar)DynamicVars["ExhaustPile"]).Calculate(Owner.Creature); //Calculate the "ExhaustPile" var and put it in taliGained
         await PowerCmd.Apply<TalismanPower>(choiceContext, this.Owner.Creature, taliGained, this.Owner.Creature, //gain tali equal taliGained
             (CardModel)this);
-        await CardCmd.Exhaust(choiceContext, this); //Makes card Exhaust after playing
     }
 
     protected override void OnUpgrade()

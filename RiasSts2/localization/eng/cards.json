@@ -1,34 +1,32 @@
-
 {
-  
   "RIASSTS2-BLOOD_CLAWS.description": "#Deal !D! damage twice.",
   "RIASSTS2-BLOOD_CLAWS.title": "Blood Claws",
-  
+
   "RIASSTS2-STRIKE_RIAS.description": "#Deal !D! damage.",
   "RIASSTS2-STRIKE_RIAS.title": "Strike",
 
   "RIASSTS2-DEFEND_RIAS.description": "#Gain !B! *Block.",
   "RIASSTS2-DEFEND_RIAS.title": "Defend",
-  
-  "RIASSTS2-BLEED.description": "#Lose 1 HP.\nDraw !C! cards.\nGain !TalismanPower! Talismans",
+
+  "RIASSTS2-BLEED.description": "#Lose 1 HP.\nDraw !C! cards.\nGain !TalismanPower! [color=#B71D5A]Talismans[/color]",
   "RIASSTS2-BLEED.title": "Bleed",
 
-  "RIASSTS2-BLOOD_DAGGER.description": "#Deal !D! damage for each Talisman you have.",
+  "RIASSTS2-BLOOD_DAGGER.description": "#Deal !D! damage for each [color=#B71D5A]Talisman[/color] you have.",
   "RIASSTS2-BLOOD_DAGGER.title": "Blood Dagger",
 
   "RIASSTS2-BLOOD_HUNT.description": "#Deal !D! damage to ALL enemies.",
   "RIASSTS2-BLOOD_HUNT.title": "Blood Hunt",
 
-  "RIASSTS2-BLOOD_MANIPULATION.description": "#Lose all Talismans.\nGain !CalculationExtra! *Block for each Talisman lost.\n(!CalculatedBlock!)",
+  "RIASSTS2-BLOOD_MANIPULATION.description": "#Lose all [color=#B71D5A]Talismans[/color].\nGain !CalculationExtra! *Block for each [color=#B71D5A]Talisman[/color] lost.\n(!CalculatedBlock!)",
   "RIASSTS2-BLOOD_MANIPULATION.title": "Blood Manipulation",
 
-  "RIASSTS2-BLOOD_TALISMANS.description": "#Gain !TalismanPower! Talismans",
+  "RIASSTS2-BLOOD_TALISMANS.description": "#Gain !TalismanPower! [color=#B71D5A]Talismans[/color]",
   "RIASSTS2-BLOOD_TALISMANS.title": "Blood Talismans",
 
-  "RIASSTS2-BLOOD_MOON.description": "#Gain !B! [gold]Block[/gold].\nGain !TalismanPower! Talisman(s).",
+  "RIASSTS2-BLOOD_MOON.description": "#Gain !B! [gold]Block[/gold].\nGain !TalismanPower! [color=#B71D5A]Talisman(s)[/color].",
   "RIASSTS2-BLOOD_MOON.title": "Blood Moon",
 
-  "RIASSTS2-CUNNING_FOX.description": "#*Exhaust a card.\nGain !TalismanPower! Talisman.\n+Draw !C! card.+",
+  "RIASSTS2-CUNNING_FOX.description": "#*Exhaust a card.\nGain !TalismanPower! [color=#B71D5A]Talisman[/color].\n+Draw !C! card.+",
   "RIASSTS2-CUNNING_FOX.title": "Cunning Fox",
 
   "RIASSTS2-TERROR.description": "#Deal !D! damage.\nApply !VulnerablePower! *Vulnerable.",
@@ -52,10 +50,10 @@
   "RIASSTS2-TAKEDOWN.description": "#Deal !D! damage for each skill in your hand.\n Hits !CalculatedHits! times.",
   "RIASSTS2-TAKEDOWN.title": "Takedown",
 
-  "RIASSTS2-BLOOD_MOON_RITUAL.description": "#Gain a Talisman for each card in your *Exhaust pile. (!ExhaustPile!)\n*Exhaust",
+  "RIASSTS2-BLOOD_MOON_RITUAL.description": "#Gain a [color=#B71D5A]Talisman[/color] for each card in your *Exhaust pile. (!ExhaustPile!)",
   "RIASSTS2-BLOOD_MOON_RITUAL.title": "Blood Moon Ritual",
 
-  "RIASSTS2-BLOOD_INSCRIPTION.description": "#If you have no Talismans, deal !D! damage.\n*Exhaust.",
+  "RIASSTS2-BLOOD_INSCRIPTION.description": "#If you have no [color=#B71D5A]Talismans[/color], deal !D! damage.",
   "RIASSTS2-BLOOD_INSCRIPTION.title": "Blood Inscription",
 
   "RIASSTS2-BLOOD_KITSUNE.description": "#Deal !D! damage.\nHits an additional time for each Power played this combat.\nHits !powersPlayed! times.",
@@ -64,9 +62,30 @@
   "RIASSTS2-BLOOD_MOON_RIAS.description": "#Gain !BloodMoonRiasPower! *Block each time you play an Attack this turn.",
   "RIASSTS2-BLOOD_MOON_RIAS.title": "Blood Moon Rias",
 
-  "RIASSTS2-BLOOD_SPIKES.description": "#Deal !D! damage.\n Repeats for each card in your *Exhaust pile.\n Hits !CalculatedHits! times.",
+  "RIASSTS2-BLOOD_SPIKES.description": "#Deal !D! damage.\nRepeats for each card in your *Exhaust pile.\n Hits !CalculatedHits! times.",
   "RIASSTS2-BLOOD_SPIKES.title": "Blood Spikes",
 
-  "RIASSTS2-CEREMONIAL_SASH.description": "#Gain [E]\nGain !TalismanPower! Talismans.\nDraw !C! Card(s).",
-  "RIASSTS2-CEREMONIAL_SASH.title": "Ceremonial Sash"
+  "RIASSTS2-CEREMONIAL_SASH.description": "#Gain [E]\nGain !TalismanPower! [color=#B71D5A]Talismans[/color].\nDraw !C! Card(s).",
+  "RIASSTS2-CEREMONIAL_SASH.title": "Ceremonial Sash",
+
+  "RIASSTS2-CRIMSON_CAGE.description": "#Gain !IntangiblePower! *Intangible.\nGain !WeakPower! *Weak.",
+  "RIASSTS2-CRIMSON_CAGE.title": "Crimson Cage",
+
+  "RIASSTS2-CRIMSON_LAMENT.description": "#Deal !D! damage to ALL enemies for each [color=#B71D5A]Talisman[/color] you have.",
+  "RIASSTS2-CRIMSON_LAMENT.title": "Crimson Lament",
+
+  "RIASSTS2-CURSED_FLAME.description": "#At the start of your next turn, gain [color=#B71D5A]Talismans[/color] equal to your current [color=#B71D5A]Talismans[/color].",
+  "RIASSTS2-CURSED_FLAME.title": "Cursed Flame",
+  
+  "RIASSTS2-DANGER_SENSE.description": "#Gain !B! *Block.",
+  "RIASSTS2-DANGER_SENSE.title": "Danger Sense",
+  
+  "RIASSTS2-DEFENDER.description": "#Gain !DexterityPower! *Dexterity.",
+  "RIASSTS2-DEFENDER.title": "Defender",
+
+  "RIASSTS2-DEFIANCE.description": "#Draw !C! cards.\n One random card in hand costs [E] less to play this combat.",
+  "RIASSTS2-DEFIANCE.title": "Defiance",
+
+  "RIASSTS2-DEMONIC_STRENGTH.description": "#At the start of your turn, gain !DemonicStrengthPower! *Strength.",
+  "RIASSTS2-DEMONIC_STRENGTH.title": "Demonic Strength"
 }

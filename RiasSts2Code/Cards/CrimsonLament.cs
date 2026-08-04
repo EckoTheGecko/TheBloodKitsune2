@@ -10,32 +10,37 @@ using RiasSts2.RiasSts2Code.Powers;
 namespace RiasSts2.RiasSts2Code.Cards;
 
 
-public class BloodInscription() : RiasSts2Card(2,
+public class CrimsonLament() : RiasSts2Card(2,
     CardType.Attack, CardRarity.Uncommon,
-    TargetType.AnyEnemy)
+    TargetType.AllEnemies)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(15, ValueProp.Move).WithTooltip("TALISMAN")];
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
+    
+    protected override IEnumerable<DynamicVar> CanonicalVars =>
+    [
+        ..MakeCalculatedVar("CalculatedHits",0, (card, target) => card.Owner.Creature.GetPowerAmount<TalismanPower>()), 
+        new PowerVar<TalismanPower>("TalismanPower",0).WithTooltip("TALISMAN"), new DamageVar(5, ValueProp.Move)]; //Here just to add a tooltip
+      
+
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        TalismanPower power = Owner.Creature.GetPower<TalismanPower>();
-        int amount = power != null ? power.Amount : 0;
-        if (amount > 0)
+        if (Owner.Creature.GetPowerAmount<TalismanPower>() <= 0)
             return;
-        
+            
+        int hitCount = (int)((CalculatedVar)DynamicVars["CalculatedHits"]).Calculate(null); //performs calculation for above var
         await DamageCmd.Attack(DynamicVars.Damage.BaseValue)
             .FromCard(this)
-            .Targeting(play.Target)
+            .TargetingAllOpponents(CombatState)
+            .WithHitCount(hitCount)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
-        
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(5);
+        DynamicVars.Damage.UpgradeValueBy(2);
     }
 }

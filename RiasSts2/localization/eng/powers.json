@@ -1,9 +1,17 @@
 {
-  "RIASSTS2-TALISMAN_POWER.description": "#At the end of your turn Talisman's explode, each dealing 4 damage to ALL enemies.",
-  "RIASSTS2-TALISMAN_POWER.smartDescription": "#At the end of your turn Talisman's explode, each dealing 4 damage to ALL enemies.",
+  "RIASSTS2-TALISMAN_POWER.description": "At the end of your turn [color=#B71D5A]Talismans[/color] explode, each dealing 4 damage to ALL enemies.",
+  "RIASSTS2-TALISMAN_POWER.smartDescription": "#At the end of your turn [color=#B71D5A]Talismans[/color] explode, each dealing 4 damage to ALL enemies.",
   "RIASSTS2-TALISMAN_POWER.title": "Talisman",
 
-  "RIASSTS2-BLOOD_MOON_RIAS_POWER.description": "#Whenever you play an Attack this turn, gain [blue]3[/blue] block",
+  "RIASSTS2-BLOOD_MOON_RIAS_POWER.description": "Whenever you play an Attack this turn, gain [blue]3[/blue] block",
   "RIASSTS2-BLOOD_MOON_RIAS_POWER.smartDescription": "#Whenever you play an Attack this turn, gain [blue]{Amount}[/blue] block",
-  "RIASSTS2-BLOOD_MOON_RIAS_POWER.title": "Blood Moon Rias"
+  "RIASSTS2-BLOOD_MOON_RIAS_POWER.title": "Blood Moon Rias",
+  
+  "RIASSTS2-TALISMAN_NEXT_TURN_POWER.description": "Gain 0 [color=#B71D5A]Talismans[/color] at the start of your next turn.",
+  "RIASSTS2-TALISMAN_NEXT_TURN_POWER.smartDescription": "#Gain {Amount} [color=#B71D5A]Talismans[/color] at the start of your next turn.",
+  "RIASSTS2-TALISMAN_NEXT_TURN_POWER.title": "Cursed Flame",
+
+  "RIASSTS2-DEMONIC_STRENGTH_POWER.description": "At the start of your turn, gain 0 Strength.",
+  "RIASSTS2-DEMONIC_STRENGTH_POWER.smartDescription": "#At the start of your turn, gain {Amount} *Strength.",
+  "RIASSTS2-DEMONIC_STRENGTH_POWER.title": "Demonic Strength Power"
 }

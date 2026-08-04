@@ -25,9 +25,7 @@ public class TalismanPower() : RiasSts2Power
         PowerStackType.Counter;
     // public int TotalDamage => 4 * Amount;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new ("TotalDamage", 4 * Amount)
-    ];
+
     public override async Task BeforeSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side,
         IEnumerable<Creature> participants)
     {

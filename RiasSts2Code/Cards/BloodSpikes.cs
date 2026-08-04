@@ -12,6 +12,7 @@ public class BloodSpikes() : RiasSts2Card(2,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move),
         ..MakeCalculatedVar("CalculatedHits", 0,(card,_)=> PileType.Exhaust.GetPile(card.Owner).Cards.Count)];
 
@@ -19,6 +20,7 @@ public class BloodSpikes() : RiasSts2Card(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        
         
         int hitCount = (int)((CalculatedVar)DynamicVars["CalculatedHits"]).Calculate(play.Target); //performs calculation for above var
         
