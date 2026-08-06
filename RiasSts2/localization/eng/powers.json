@@ -13,5 +13,17 @@
 
   "RIASSTS2-DEMONIC_STRENGTH_POWER.description": "At the start of your turn, gain 0 Strength.",
   "RIASSTS2-DEMONIC_STRENGTH_POWER.smartDescription": "#At the start of your turn, gain {Amount} *Strength.",
-  "RIASSTS2-DEMONIC_STRENGTH_POWER.title": "Demonic Strength Power"
+  "RIASSTS2-DEMONIC_STRENGTH_POWER.title": "Demonic Strength Power",
+
+  "RIASSTS2-EXPLODING_BLOOD_POWER.description": "Whenever you Exhaust a card, deal 3 damage to ALL enemies.",
+  "RIASSTS2-EXPLODING_BLOOD_POWER.smartDescription": "#Whenever you *Exhaust a card, deal {Amount} damage to ALL enemies.",
+  "RIASSTS2-EXPLODING_BLOOD_POWER.title": "Exploding Blood",
+
+  "RIASSTS2-RAVAGING_POWER.description": "Whenever you play an attack this turn, gain 0 [color=#B71D5A]Talisman(s)[/color]",
+  "RIASSTS2-RAVAGING_POWER.smartDescription": "#Whenever you play an attack this turn, gain {Amount} [color=#B71D5A]Talisman(s)[/color]",
+  "RIASSTS2-RAVAGING_POWER.title": "Ravaging",
+
+  "RIASSTS2-VIGOROUS_GROWTH_POWER.description": "Whenever you play a card this turn, 0 Vigor.",
+  "RIASSTS2-VIGOROUS_GROWTH_POWER.smartDescription": "#Whenever you play a card this turn, gain {Amount} *Vigor.",
+  "RIASSTS2-VIGOROUS_GROWTH_POWER.title": "Vigorous Growth"
 }

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://p1gq1q8sqfpa"
-path="res://.godot/imported/Endurance.png-1992724d758dcc01905f7707da5b883c.ctex"
+uid="uid://b00iyrn8evtix"
+path="res://.godot/imported/endurance.png-d69b7ad10c36131431b6e5696ba557fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RiasSts2/images/card_portraits/Endurance.png"
-dest_files=["res://.godot/imported/Endurance.png-1992724d758dcc01905f7707da5b883c.ctex"]
+source_file="res://RiasSts2/images/card_portraits/endurance.png"
+dest_files=["res://.godot/imported/endurance.png-d69b7ad10c36131431b6e5696ba557fe.ctex"]
 
 [params]
 

@@ -15,26 +15,24 @@ using RiasSts2.RiasSts2Code.Powers;
 namespace RiasSts2.RiasSts2Code.Cards;
 
 
+
 public class BloodManipulation() : RiasSts2Card(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
-    [
-       ..MakeCalculatedBlock(0, (card, target) => card.Owner.Creature.GetPowerAmount<TalismanPower>(),2), 
-       new PowerVar<TalismanPower>("TalismanPower",0).WithTooltip("TALISMAN")]; //Here just to add a tooltip
+    [new DamageVar(6, ValueProp.Move)];
       
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.CalculatedBlock.Calculate(Owner.Creature), this.DynamicVars.CalculatedBlock.Props, play);
-        await PowerCmd.Remove<TalismanPower>(Owner.Creature);
+        await CreatureCmd.GainBlock(Owner.Creature, (await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this).Targeting(play.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext)).Results.SelectMany(r => r).Sum(r => r.TotalDamage + r.OverkillDamage), ValueProp.Move, play);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.CalculationExtra.UpgradeValueBy(3);
+        DynamicVars.Damage.UpgradeValueBy(3);
     }
 }

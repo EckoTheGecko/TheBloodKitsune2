@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3ikjv4p08m7u"
-path="res://.godot/imported/vigor.png-944408c70ad9a89bff424d12e5f87724.ctex"
+uid="uid://ce6a8r8rt4xak"
+path="res://.godot/imported/conjured_dagger.png-357403e7233a856b165cd54ffa8ea576.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RiasSts2/images/card_portraits/vigor.png"
-dest_files=["res://.godot/imported/vigor.png-944408c70ad9a89bff424d12e5f87724.ctex"]
+source_file="res://RiasSts2/images/card_portraits/conjured_dagger.png"
+dest_files=["res://.godot/imported/conjured_dagger.png-357403e7233a856b165cd54ffa8ea576.ctex"]
 
 [params]
 

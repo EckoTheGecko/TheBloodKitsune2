@@ -11,22 +11,24 @@ using RiasSts2.RiasSts2Code.Powers;
 namespace RiasSts2.RiasSts2Code.Cards;
 
 
-public class BloodMoon() : RiasSts2Card(1,
-    CardType.Skill, CardRarity.Common,
+public class Depleted() : RiasSts2Card(1,
+    CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6, ValueProp.Move), new PowerVar<TalismanPower>(1).WithTooltip("TALISMAN")];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new HpLossVar(2), new BlockVar(12, ValueProp.Move)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        
+        await CreatureCmd.Damage(choiceContext, Owner.Creature, DynamicVars.HpLoss.IntValue, ValueProp.Unblockable | ValueProp.Unpowered, null, null);
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
-        await PowerCmd.Apply<TalismanPower>(choiceContext, this.Owner.Creature, this.DynamicVars["TalismanPower"].BaseValue, this.Owner.Creature, (CardModel) this);
+        
     }
 
     protected override void OnUpgrade()
     {
-        this.DynamicVars.Power<TalismanPower>().UpgradeValueBy(1);
+        DynamicVars.Block.UpgradeValueBy(4);
     }
 }

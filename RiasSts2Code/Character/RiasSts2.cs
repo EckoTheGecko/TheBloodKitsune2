@@ -2,6 +2,7 @@
 using BaseLib.Utils.NodeFactories;
 using RiasSts2.RiasSts2Code.Extensions;
 using Godot;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Models;
@@ -19,10 +20,11 @@ public class RiasSts2 : PlaceholderCharacterModel
     public const string CharacterId = "RiasSts2";
 
     public static readonly Color Color = new("721e1e");
-
+    
     public override Color NameColor => Color;
     public override CharacterGender Gender => CharacterGender.Neutral;
     public override int StartingHp => 80;
+    
 
     public override IEnumerable<CardModel> StartingDeck =>
     [

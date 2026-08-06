@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2gtf43ja4vh8"
-path="res://.godot/imported/hell_blossom.png-721d80dcb465857baa9c459df69b6c6b.ctex"
+uid="uid://dxkc20bh21fsk"
+path="res://.godot/imported/conjured_dagger.png-91994a274d7f8c2c68663f32ab4fa25b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RiasSts2/images/card_portraits/hell_blossom.png"
-dest_files=["res://.godot/imported/hell_blossom.png-721d80dcb465857baa9c459df69b6c6b.ctex"]
+source_file="res://RiasSts2/images/card_portraits/big/conjured_dagger.png"
+dest_files=["res://.godot/imported/conjured_dagger.png-91994a274d7f8c2c68663f32ab4fa25b.ctex"]
 
 [params]
 

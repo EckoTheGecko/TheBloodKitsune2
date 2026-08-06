@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdjrhv54qvyr2"
-path="res://.godot/imported/Interpose.png-c9e73663da9d18392823cdf9cb9d67e6.ctex"
+uid="uid://cs5g6mtpdw2a3"
+path="res://.godot/imported/interpose.png-9273d2b25c82ce7395d1aa93c7c14f08.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RiasSts2/images/card_portraits/Interpose.png"
-dest_files=["res://.godot/imported/Interpose.png-c9e73663da9d18392823cdf9cb9d67e6.ctex"]
+source_file="res://RiasSts2/images/card_portraits/interpose.png"
+dest_files=["res://.godot/imported/interpose.png-9273d2b25c82ce7395d1aa93c7c14f08.ctex"]
 
 [params]
 

@@ -11,14 +11,11 @@
   "RIASSTS2-BLEED.description": "#Lose 1 HP.\nDraw !C! cards.\nGain !TalismanPower! [color=#B71D5A]Talismans[/color]",
   "RIASSTS2-BLEED.title": "Bleed",
 
-  "RIASSTS2-BLOOD_DAGGER.description": "#Deal !D! damage for each [color=#B71D5A]Talisman[/color] you have.",
+  "RIASSTS2-BLOOD_DAGGER.description": "#Deal !D! damage for each [color=#B71D5A]Talisman[/color] you have.\n Apply !VulnerablePower! *Vulnerable.",
   "RIASSTS2-BLOOD_DAGGER.title": "Blood Dagger",
 
   "RIASSTS2-BLOOD_HUNT.description": "#Deal !D! damage to ALL enemies.",
   "RIASSTS2-BLOOD_HUNT.title": "Blood Hunt",
-
-  "RIASSTS2-BLOOD_MANIPULATION.description": "#Lose all [color=#B71D5A]Talismans[/color].\nGain !CalculationExtra! *Block for each [color=#B71D5A]Talisman[/color] lost.\n(!CalculatedBlock!)",
-  "RIASSTS2-BLOOD_MANIPULATION.title": "Blood Manipulation",
 
   "RIASSTS2-BLOOD_TALISMANS.description": "#Gain !TalismanPower! [color=#B71D5A]Talismans[/color]",
   "RIASSTS2-BLOOD_TALISMANS.title": "Blood Talismans",
@@ -87,5 +84,77 @@
   "RIASSTS2-DEFIANCE.title": "Defiance",
 
   "RIASSTS2-DEMONIC_STRENGTH.description": "#At the start of your turn, gain !DemonicStrengthPower! *Strength.",
-  "RIASSTS2-DEMONIC_STRENGTH.title": "Demonic Strength"
+  "RIASSTS2-DEMONIC_STRENGTH.title": "Demonic Strength",
+
+  "RIASSTS2-DEPLETED.description": "#Lose 2 HP.\nGain !B! *Block.",
+  "RIASSTS2-DEPLETED.title": "Depleted",
+
+  "RIASSTS2-DIVINE_DAGGERS.description": "#Add 2 *Divine *Blood *Daggers+++ to your *Hand.",
+  "RIASSTS2-DIVINE_DAGGERS.title": "Divine Daggers",
+
+  "RIASSTS2-ENDURANCE.description": "#Gain !B! *Block.\nGain !StrengthPower! *Strength.",
+  "RIASSTS2-ENDURANCE.title": "Endurance",
+
+  "RIASSTS2-CONJURED_DAGGER.description": "#Deal !D! damage.\nGain !RegenPower! *Regen.",
+  "RIASSTS2-CONJURED_DAGGER.title": "Divine Blood Dagger",
+
+  "RIASSTS2-ENVOY.description": "#Draw !C! cards.\nExhaust 1 card.\nReduce the cost of 1 random card in *Hand to 0 this combat.",
+  "RIASSTS2-ENVOY.title": "Envoy",
+
+  "RIASSTS2-EXPLODING_BLOOD.description": "#Whenever you *Exhaust a card, deal !ExplodingBloodPower! damage to ALL enemies.",
+  "RIASSTS2-EXPLODING_BLOOD.title": "Exploding Blood",
+
+  "RIASSTS2-HELLS_BLOSSOM.description": "#Deal !D! damage !Repeat! times.\nGain !TalismanPower! [color=#B71D5A]Talismans[/color].",
+  "RIASSTS2-HELLS_BLOSSOM.title": "Hell's Blossom",
+
+  "RIASSTS2-HYPER_SENSES.description": "#Gain !B! *Block for each enemy.\nApply !WeakPower! *Weak to ALL enemies.",
+  "RIASSTS2-HYPER_SENSES.title": "Hyper-Senses",
+
+  "RIASSTS2-INTERPOSE.description": "#ALL enemies lose !EnemyStr! *Strength.\nYou lose !PlayerStr! *Strength.",
+  "RIASSTS2-INTERPOSE.title": "Interpose",
+
+  "RIASSTS2-LOYAL_SERVANT.description": "#Gain !CalculationExtra! *Block for each card in your *Hand.",
+  "RIASSTS2-LOYAL_SERVANT.title": "Loyal Servant",
+
+  "RIASSTS2-LYCORIS_RADIATA.description": "#Can only be played if you have played no cards this turn.\nGain !RegenPower! *Regen.\nAttacks cost an extra [E] this turn.",
+  "RIASSTS2-LYCORIS_RADIATA.title": "Lycoris Radiata",
+
+  "RIASSTS2-MARK_OF_BINDING.description": "#Apply !VulnerablePower! *Vulnerable and !WeakPower! *Weak.\nIf the target intends to attack, gain !TalismanPower! [color=#B71D5A]Talisman[/color].",
+  "RIASSTS2-MARK_OF_BINDING.title": "Mark Of Binding",
+
+  "RIASSTS2-NEWLY_HUMAN.description": "#Remove all *Block from the enemy.\nEnemy loses 2 *Strength.\nApply 2 *Weak.",
+  "RIASSTS2-NEWLY_HUMAN.title": "Newly Human",
+
+  "RIASSTS2-PAIN_TOLERANCE.description": "#Gain !B! *Block.\nGain !TalismanPower! [color=#B71D5A]Talisman(s)[/color].",
+  "RIASSTS2-PAIN_TOLERANCE.title": "Pain Tolerance",
+
+  "RIASSTS2-PULSE_SLASH.description": "#Deal !D! damage twice and apply !VulnerablePower! *Vulnerable to ALL enemies.",
+  "RIASSTS2-PULSE_SLASH.title": "Pulse Slash",
+
+  "RIASSTS2-RAVAGING.description": "#Whenever you play an attack this turn, gain !RavagingPower! [color=#B71D5A]Talisman(s)[/color].",
+  "RIASSTS2-RAVAGING.title": "Ravaging",
+
+  "RIASSTS2-RESOLVE.description": "#Double your current *Block.",
+  "RIASSTS2-RESOLVE.title": "Resolve",
+  
+  "RIASSTS2-SANGUINE_SHIELD.description": "#Gain !CalculationExtra! *Block for each [color=#B71D5A]Talisman[/color] you have.\n(!CalculatedBlock!)",
+  "RIASSTS2-SANGUINE_SHIELD.title": "Sanguine Shield",
+
+  "RIASSTS2-BLOOD_MANIPULATION.description": "#Deal !D! damage.\nGain *Block equal to damage dealt.",
+  "RIASSTS2-BLOOD_MANIPULATION.title": "Blood Manipulation",
+
+  "RIASSTS2-SEALED.description": "#*Exhaust your hand.\nGain a [color=#B71D5A]Talisman[/color] for each card *Exhausted.",
+  "RIASSTS2-SEALED.title": "Sealed",
+
+  "RIASSTS2-SERVANTS_TRINKET.description": "#Draw !C! card(s).\nIf it has *Exhaust, play it for 0 cost and draw !C! card(s).",
+  "RIASSTS2-SERVANTS_TRINKET.title": "Servant's Trinket",
+
+  "RIASSTS2-SPIRIT_GUARDIAN.description": "#Gain !DexterityPower! *Dexterity.\nGain !StrengthPower! *Strength.\nGain !TalismanPower! [color=#B71D5A]Talisman[/color].",
+  "RIASSTS2-SPIRIT_GUARDIAN.title": "Spirit Guardian",
+
+  "RIASSTS2-TEAM_ATTACK.description": "#Deal !D! damage to a random enemy !Repeat! times.",
+  "RIASSTS2-TEAM_ATTACK.title": "Team Attack",
+
+  "RIASSTS2-VIGOROUS_GROWTH.description": "#Whenever you play a card this turn, gain !VigorousGrowthPower! *Vigor.",
+  "RIASSTS2-VIGOROUS_GROWTH.title": "Vigorous Growth"
 }

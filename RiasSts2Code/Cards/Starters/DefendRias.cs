@@ -12,6 +12,8 @@ public class DefendRias() : RiasSts2Card(1,
     CardType.Skill, CardRarity.Basic,
     TargetType.Self)
 {
+    
+    
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(5, ValueProp.Move)];
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend];
     protected override async Task OnPlay(

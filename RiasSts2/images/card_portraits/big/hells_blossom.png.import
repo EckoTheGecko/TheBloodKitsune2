@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://coqpxb2hmpoc1"
-path="res://.godot/imported/vigor.png-a2d31583006168ef87e2fb27147045b9.ctex"
+uid="uid://7cd8f2p58v2m"
+path="res://.godot/imported/hells_blossom.png-0bf142857d300477beead25a87b149e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RiasSts2/images/card_portraits/big/vigor.png"
-dest_files=["res://.godot/imported/vigor.png-a2d31583006168ef87e2fb27147045b9.ctex"]
+source_file="res://RiasSts2/images/card_portraits/big/hells_blossom.png"
+dest_files=["res://.godot/imported/hells_blossom.png-0bf142857d300477beead25a87b149e1.ctex"]
 
 [params]
 

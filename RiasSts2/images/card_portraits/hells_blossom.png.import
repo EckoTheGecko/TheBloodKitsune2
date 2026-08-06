@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d20e25kw14jvx"
-path="res://.godot/imported/hell_blossom.png-67550bde232dd5f2da1f4a5ccef14b80.ctex"
+uid="uid://drui8cnb7q75e"
+path="res://.godot/imported/hells_blossom.png-440209be326904e313c851de7b180877.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RiasSts2/images/card_portraits/big/hell_blossom.png"
-dest_files=["res://.godot/imported/hell_blossom.png-67550bde232dd5f2da1f4a5ccef14b80.ctex"]
+source_file="res://RiasSts2/images/card_portraits/hells_blossom.png"
+dest_files=["res://.godot/imported/hells_blossom.png-440209be326904e313c851de7b180877.ctex"]
 
 [params]
 
