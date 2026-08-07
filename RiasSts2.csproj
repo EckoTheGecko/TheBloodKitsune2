@@ -63,6 +63,7 @@
     <ItemGroup>
         <Folder Include="RiasSts2\images\ancient\" />
         <Folder Include="RiasSts2\images\card_portraits\big\"/>
+        <Folder Include="RiasSts2\images\events\" />
         <Folder Include="RiasSts2\images\powers\big\"/>
         <Folder Include="RiasSts2\images\relics\big\"/>
     </ItemGroup>

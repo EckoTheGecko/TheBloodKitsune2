@@ -27,7 +27,7 @@ public class TailSlash() : RiasSts2Card(2,
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
         
-        await PowerCmd.Apply<VulnerablePower>(choiceContext, this.Owner.Creature, this.DynamicVars.Power<VulnerablePower>().BaseValue, this.Owner.Creature, (CardModel) this);
+        await PowerCmd.Apply<VulnerablePower>(choiceContext, CombatState.HittableEnemies, this.DynamicVars.Power<VulnerablePower>().BaseValue, this.Owner.Creature, (CardModel) this);
     
     }
 

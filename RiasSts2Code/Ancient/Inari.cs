@@ -15,7 +15,7 @@ public class Inari : CustomAncientModel
 {
     protected override OptionPools MakeOptionPools => new OptionPools(
         
-            [AncientOption<Nunchaku>()],
+            [AncientOption<BucketOfChickenRelic>()],
             
             [AncientOption<Lantern>()],
             

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnv78sj6cvmf3"
-path="res://.godot/imported/exorsism.png-e201b97594de84faa0a8d1963f724b02.ctex"
+uid="uid://drqdd7vk87f1t"
+path="res://.godot/imported/servants_trinket.png-fee408df752f0c11a30bc611d28ee0ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RiasSts2/images/card_portraits/big/exorsism.png"
-dest_files=["res://.godot/imported/exorsism.png-e201b97594de84faa0a8d1963f724b02.ctex"]
+source_file="res://RiasSts2/images/card_portraits/servants_trinket.png"
+dest_files=["res://.godot/imported/servants_trinket.png-fee408df752f0c11a30bc611d28ee0ef.ctex"]
 
 [params]
 

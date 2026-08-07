@@ -20,6 +20,8 @@ public class BloodManipulation() : RiasSts2Card(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
+    
+    protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [new DamageVar(6, ValueProp.Move)];
       

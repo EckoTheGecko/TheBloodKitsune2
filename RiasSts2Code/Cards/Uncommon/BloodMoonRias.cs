@@ -15,6 +15,7 @@ public class BloodMoonRias() : RiasSts2Card(0,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
+    protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<BloodMoonRiasPower>("BloodMoonRiasPower",3)];
 
     protected override async Task OnPlay(

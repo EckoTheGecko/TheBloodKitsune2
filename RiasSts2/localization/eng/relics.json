@@ -1,9 +1,13 @@
 {
-  "RIASSTS2-HIGANBANA_RELIC.description": "Gain an additional [gold]Energy[/gold] on the first turn of combat.",
+  "RIASSTS2-HIGANBANA_RELIC.description": "#Gain an additional [gold]Energy[/gold] on the first turn of combat.",
   "RIASSTS2-HIGANBANA_RELIC.flavor": "Known as a Spider Lily, Death Blossom, or the Flower of the Dead.",
   "RIASSTS2-HIGANBANA_RELIC.title": "Higanbana",
 
-  "RIASSTS2-TALISMANS_RELIC.description": "Gain a Talisman when you Lose HP from any source.",
+  "RIASSTS2-TALISMANS_RELIC.description": "#Gain a Talisman when you Lose HP from any source.",
   "RIASSTS2-TALISMANS_RELIC.flavor": "Talismans written with blood. Incredibly explosive blood.",
-  "RIASSTS2-TALISMANS_RELIC.title": "Blood Talismans"
+  "RIASSTS2-TALISMANS_RELIC.title": "Blood Talismans",
+
+  "MEGACRIT-BUCKET_OF_CHICKEN_RELIC.description": "#You can now gain *Dexterity at *Rest *Sites (3 times max).",
+  "MEGACRIT-BUCKET_OF_CHICKEN_RELIC.flavor": "After a long day of kicking ass and being a rude fox, Rias loves to kick back with a big bucket of chicken.",
+  "MEGACRIT-BUCKET_OF_CHICKEN_RELIC.title": "Bucket Of Chicken"
 }

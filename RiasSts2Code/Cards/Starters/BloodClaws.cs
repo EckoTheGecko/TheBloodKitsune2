@@ -14,6 +14,8 @@ public class BloodClaws() : RiasSts2Card(1,
     CardType.Attack, CardRarity.Basic,
     TargetType.AnyEnemy), ITranscendenceCard
 {
+    
+    protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
     public CardModel GetTranscendenceTransformedCard() => ModelDb.Card<FeralClaws>();
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [

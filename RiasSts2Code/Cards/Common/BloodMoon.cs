@@ -17,7 +17,7 @@ public class BloodMoon() : RiasSts2Card(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
-    
+    protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6, ValueProp.Move), new PowerVar<TalismanPower>(1).WithTooltip("TALISMAN")];
 

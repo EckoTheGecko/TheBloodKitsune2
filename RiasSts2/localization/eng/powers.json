@@ -25,5 +25,37 @@
 
   "RIASSTS2-VIGOROUS_GROWTH_POWER.description": "Whenever you play a card this turn, 0 Vigor.",
   "RIASSTS2-VIGOROUS_GROWTH_POWER.smartDescription": "#Whenever you play a card this turn, gain {Amount} *Vigor.",
-  "RIASSTS2-VIGOROUS_GROWTH_POWER.title": "Vigorous Growth"
+  "RIASSTS2-VIGOROUS_GROWTH_POWER.title": "Vigorous Growth",
+
+  "RIASSTS2-CORRUPTION_MASK_POWER.description": "At the start of your turn *Exhaust 1 card and gain 0 *Thorns.",
+  "RIASSTS2-CORRUPTION_MASK_POWER.smartDescription": "#At the start of your turn *Exhaust 1 card and gain {Amount} *Thorns.",
+  "RIASSTS2-CORRUPTION_MASK_POWER.title": "Corruption Mask",
+
+  "RIASSTS2-ENDWALKER_POWER.description": "At the start of your turn, gain 0 [color=#B71D5A]Talisman(s)[/color] and gain 1 [E].",
+  "RIASSTS2-ENDWALKER_POWER.smartDescription": "#At the start of your turn, gain {Amount} [color=#B71D5A]Talisman(s)[/color] and gain 1 [E].",
+  "RIASSTS2-ENDWALKER_POWER.title": "Endwalker",
+
+  "RIASSTS2-DEMON_BLOOD_POWER.description": "#At the end of your turn, your [color=#B71D5A]Talismans[/color] detonate 0 more time(s).",
+  "RIASSTS2-DEMON_BLOOD_POWER.smartDescription": "#At the end of your turn, your [color=#B71D5A]Talismans[/color] detonate {Amount} more time(s).",
+  "RIASSTS2-DEMON_BLOOD_POWER.title": "Demon Blood",
+
+  "RIASSTS2-GLUTTONY_POWER.description": "At the start of your turn, gain 0 Dexterity",
+  "RIASSTS2-GLUTTONY_POWER.smartDescription": "#At the start of your turn, gain {Amount} *Dexterity.",
+  "RIASSTS2-GLUTTONY_POWER.title": "Gluttony",
+
+  "RIASSTS2-INARIS_BLOOD_POWER.description": "Whenever you lose HP on your turn, gain 0 Talisman.",
+  "RIASSTS2-INARIS_BLOOD_POWER.smartDescription": "#Whenever you lose HP on your turn, gain {Amount} [color=#B71D5A]Talisman(s)[/color]",
+  "RIASSTS2-INARIS_BLOOD_POWER.title": "Inari's Blood",
+
+  "RIASSTS2-KAMIS_SERVANT_POWER.description": "Whenever you gain a Talisman, gain 0 Block",
+  "RIASSTS2-KAMIS_SERVANT_POWER.smartDescription": "#Whenever you gain a [color=#B71D5A]Talisman[/color] gain {Amount} *Block.",
+  "RIASSTS2-KAMIS_SERVANT_POWER.title": "Kami's Servant",
+
+  "RIASSTS2-LASTING_BOND_POWER.description": "Whenever you lose HP on your turn, gain 0 Strength.",
+  "RIASSTS2-LASTING_BOND_POWER.smartDescription": "#Whenever you lose HP on your turn, gain {Amount} *Strength",
+  "RIASSTS2-LASTING_BOND_POWER.title": "Lasting Bond",
+
+  "RIASSTS2-LOYALTY_POWER.description": "Whenever you Exhaust a card, gain 0 Talisman.",
+  "RIASSTS2-LOYALTY_POWER.smartDescription": "#Whenever you *Exhaust a card, gain {Amount} [color=#B71D5A]Talisman(s)[/color].",
+  "RIASSTS2-LOYALTY_POWER.title": "Loyalty"
 }

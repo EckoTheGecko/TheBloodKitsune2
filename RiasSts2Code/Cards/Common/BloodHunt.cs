@@ -12,6 +12,8 @@ public class BloodHunt() : RiasSts2Card(1,
     CardType.Attack, CardRarity.Common,
     TargetType.AllEnemies)
 {
+    
+    protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move)];
 
     protected override async Task OnPlay(

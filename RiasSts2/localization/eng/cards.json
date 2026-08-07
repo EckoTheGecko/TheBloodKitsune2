@@ -156,5 +156,68 @@
   "RIASSTS2-TEAM_ATTACK.title": "Team Attack",
 
   "RIASSTS2-VIGOROUS_GROWTH.description": "#Whenever you play a card this turn, gain !VigorousGrowthPower! *Vigor.",
-  "RIASSTS2-VIGOROUS_GROWTH.title": "Vigorous Growth"
+  "RIASSTS2-VIGOROUS_GROWTH.title": "Vigorous Growth",
+
+  "RIASSTS2-BERSERK.description": "#Deal !D! damage to ALL enemies.\nLose !HpLoss! HP.\nGain !TalismanPower! [color=#B71D5A]Talisman[/color].",
+  "RIASSTS2-BERSERK.title": "Berserk",
+
+  "RIASSTS2-BLOOD_BARRIER.description": "#ALL players gain !PlatingPower! *Plating.",
+  "RIASSTS2-BLOOD_BARRIER.title": "Blood Barrier",
+
+  "RIASSTS2-BLOOD_SURGE.description": "#Discard 2 cards.\nGain !StrengthPower! *Strength.",
+  "RIASSTS2-BLOOD_SURGE.title": "Blood Surge",
+
+  "RIASSTS2-CORRUPTION_MASK.description": "#At the start of your turn, Exhaust 1 card and gain !CorruptionMaskPower! *Thorns.",
+  "RIASSTS2-CORRUPTION_MASK.title": "Corruption Mask",
+
+  "RIASSTS2-DECIMATE.description": "#Deal !D! damage to ALL enemies.\nIf you have no [color=#B71D5A]Talismans[/color], gain !B! *Block.",
+  "RIASSTS2-DECIMATE.title": "Decimate",
+
+  "RIASSTS2-ENDWALKER.description": "#At the start of your turn, gain !EndwalkerPower! [color=#B71D5A]Talisman(s)[/color] and gain 1 [E].",
+  "RIASSTS2-ENDWALKER.title": "Endwalker",
+
+  "RIASSTS2-DEMON_BLOOD.description": "#At the end of your turn, your [color=#B71D5A]Talismans[/color] detonate !DemonBloodPower! more time(s).",
+  "RIASSTS2-DEMON_BLOOD.title": "Demon Blood",
+
+  "RIASSTS2-ERSATZ.description": "#Deal !D! damage.\nApply !WeakPower! *Weak.\nApply !VulnerablePower! *Vulnerable.",
+  "RIASSTS2-ERSATZ.title": "Ersatz",
+
+  "RIASSTS2-EXORCISM.description": "#Deal damage equal to your missing HP.(!totalDamage!)",
+  "RIASSTS2-EXORCISM.title": "Exorcism",
+
+  "RIASSTS2-GLUTTONY.description": "#At the start of your turn, gain !GluttonyPower! *Dexterity.",
+  "RIASSTS2-GLUTTONY.title": "Gluttony",
+
+  "RIASSTS2-INARIS_BLOOD.description": "#Whenever you lose HP on your turn, gain !InarisBloodPower! [color=#B71D5A]Talisman(s)[/color]",
+  "RIASSTS2-INARIS_BLOOD.title": "Inaris Blood",
+
+  "RIASSTS2-KAMIS_SERVANT.description": "Whenever you gain a [color=#B71D5A]Talisman[/color], gain !KamisServantPower! *Block.",
+  "RIASSTS2-KAMIS_SERVANT.title": "Kami's Servant",
+
+  "RIASSTS2-LAST_RESORT.description": "#If you have less than 50% of your max HP (!halfHP!), gain !TalismanPower! [color=#B71D5A]Talisman(s)[/color].",
+  "RIASSTS2-LAST_RESORT.title": "Last Resort",
+
+  "RIASSTS2-LASTING_BOND.description": "#Whenever you lose HP on your turn, gain !LastingBondPower! *Strength.",
+  "RIASSTS2-LASTING_BOND.title": "Lasting Bond",
+
+  "RIASSTS2-LOYALTY.description": "#Whenever you *Exhaust a card, gain !LoyaltyPower! [color=#B71D5A]Talisman(s)[/color].",
+  "RIASSTS2-LOYALTY.title": "Loyalty",
+
+  "RIASSTS2-MASSACRE.description": "#Deal !D! damage to ALL enemies. Heal for unblocked damage dealt.",
+  "RIASSTS2-MASSACRE.title": "Massacre",
+
+  "RIASSTS2-MIND_PALACE.description": "#Reduce the cost of ALL cards currently in your *Draw *Pile by 1 [E].\n(Minimum 1).",
+  "RIASSTS2-MIND_PALACE.title": "Mind Palace",
+
+  "RIASSTS2-OATH_TREASURE.description": "#Sacrifice all of your [color=#B71D5A]Talismans[/color].\nHeal 1 for each [color=#B71D5A]Talisman[/color] lost.",
+  "RIASSTS2-OATH_TREASURE.title": "Oath Treasure",
+
+  "RIASSTS2-REMNANT.description": "#Deal !D! damage.\nIf you have less than 50% HP (!halfHP!), this card costs 0[E].",
+  "RIASSTS2-REMNANT.title": "Remnant",
+
+  "RIASSTS2-SCARLET_PIERCE.description": "#Deal !calcDamageBase! damage.\nDeals !calcDamageExtra! additional damage for ALL of your cards containing 'Blood'. (!calcDamage!)",
+  "RIASSTS2-SCARLET_PIERCE.title": "Scarlet Pierce",
+
+  "RIASSTS2-SPIRIT_TORII_GATE.description": "#Deal !D! damage and apply !VulnerablePower! *Vulnerable to ALL enemies.\nGain !TalismanPower! [color=#B71D5A]Talisman(s)[/color].",
+  "RIASSTS2-SPIRIT_TORII_GATE.title": "Spirit Torii Gate"
 }

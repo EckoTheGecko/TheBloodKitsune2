@@ -17,14 +17,14 @@ public class BloodTalismans() : RiasSts2Card(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
-    
+    protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<TalismanPower>("TalismanPower",2).WithTooltip("TALISMAN")];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PowerCmd.Apply<TalismanPower>(choiceContext, this.Owner.Creature, this.DynamicVars["TalismanPower"].BaseValue, this.Owner.Creature, (CardModel) this);
+        await PowerCmd.Apply<TalismanPower>(choiceContext, Owner.Creature, DynamicVars["TalismanPower"].BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()

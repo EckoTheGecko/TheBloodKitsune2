@@ -19,8 +19,8 @@ public class HiganbanaRelic() : RiasSts2Relic
         PlayerChoiceContext choiceContext,
         Player player)
     {
-        if (player != this.Owner || this.Owner.PlayerCombatState.TurnNumber > 1)
+        if (player != Owner || Owner.PlayerCombatState.TurnNumber > 1)
             return;
-        await PlayerCmd.GainEnergy(this.DynamicVars.Energy.BaseValue, this.Owner);
+        await PlayerCmd.GainEnergy(DynamicVars.Energy.BaseValue, Owner);
     }
 }

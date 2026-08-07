@@ -26,28 +26,42 @@ public class TalismanPower() : RiasSts2Power
     // public int TotalDamage => 4 * Amount;
     
 
-    public override async Task BeforeSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side,
+    public override async Task BeforeSideTurnEndEarly(PlayerChoiceContext choiceContext, CombatSide side,
         IEnumerable<Creature> participants)
     {
         if (!participants.Contains(Owner))
             return;
-        {
-            this.Flash();
-            await Cmd.CustomScaledWait(0.2f, 0.4f);
-            foreach (Creature hittableEnemy in CombatState.HittableEnemies)
-            {
-                NCombatRoom instance = NCombatRoom.Instance;
-                if (instance != null)
-                    instance.CombatVfxContainer.AddChildSafely((Node)NFireSmokePuffVfx.Create(hittableEnemy));
-            }
 
-            await Cmd.CustomScaledWait(0.2f, 0.4f);
-            await CreatureCmd.Damage(choiceContext, CombatState.HittableEnemies,
-                new DamageVar(this.Amount * 4, ValueProp.Unpowered), this.Owner);
-            await PowerCmd.Remove(this);
+        Flash();
+        await Cmd.CustomScaledWait(0.2f, 0.4f);
+
+        foreach (Creature hittableEnemy in CombatState.HittableEnemies)
+        {
+            NCombatRoom instance = NCombatRoom.Instance;
+            if (instance != null)
+            {
+                // Create VFX instance
+                NFireSmokePuffVfx vfx = NFireSmokePuffVfx.Create(hittableEnemy);
+            
+                if (vfx != null)
+                {
+                    // Tint the effect
+                    vfx.Modulate = new Color("#B026FF"); // Purple tint
+                    
+
+                    // Add to container
+                    instance.CombatVfxContainer.AddChildSafely((Node)vfx);
+                }
+            }
         }
 
+        await Cmd.CustomScaledWait(0.2f, 0.4f);
+        await CreatureCmd.Damage(choiceContext, CombatState.HittableEnemies,
+            new DamageVar(Amount * 4, ValueProp.Unpowered), Owner);
+    }
 
-
+    public override async Task BeforeSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
+    {
+        await PowerCmd.Remove(this);
     }
 }

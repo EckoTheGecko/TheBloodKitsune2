@@ -14,6 +14,7 @@ public class BloodInscription() : RiasSts2Card(2,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
+    protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(15, ValueProp.Move).WithTooltip("TALISMAN")];
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];

@@ -14,6 +14,7 @@ public class BloodKitsune() : RiasSts2Card(2,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
+    protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move),
         ..MakeCalculatedVar("powersPlayed", 0,(card,_)=> 
             CombatManager.Instance.History.Entries.OfType<CardPlayFinishedEntry>().Count((Func<CardPlayFinishedEntry, bool>)

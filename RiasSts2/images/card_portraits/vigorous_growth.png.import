@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb7qex40aao2q"
-path="res://.godot/imported/oath_trinket.png-6634c8c0051f7e5541e56b3b18d94c32.ctex"
+uid="uid://c6v6sj3m73qxh"
+path="res://.godot/imported/vigorous_growth.png-e1f12d8e81eafb282d3e8cce7b46cbea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RiasSts2/images/card_portraits/oath_trinket.png"
-dest_files=["res://.godot/imported/oath_trinket.png-6634c8c0051f7e5541e56b3b18d94c32.ctex"]
+source_file="res://RiasSts2/images/card_portraits/vigorous_growth.png"
+dest_files=["res://.godot/imported/vigorous_growth.png-e1f12d8e81eafb282d3e8cce7b46cbea.ctex"]
 
 [params]
 

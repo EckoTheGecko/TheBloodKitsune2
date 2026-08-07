@@ -1,15 +1,19 @@
-﻿using BaseLib.Extensions;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using BaseLib.Extensions;
+using Godot;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
+using MegaCrit.Sts2.Core.Nodes.Vfx;
 using MegaCrit.Sts2.Core.ValueProps;
-using RiasSts2.RiasSts2Code.Cards;
 
 namespace RiasSts2.RiasSts2Code.Cards;
-
 
 public class ConjuredDagger() : RiasSts2Card(0,
     CardType.Attack, CardRarity.Token,
@@ -25,13 +29,27 @@ public class ConjuredDagger() : RiasSts2Card(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        ArgumentNullException.ThrowIfNull(play.Target, nameof(play.Target));
+
+        // Color for the dagger throw
+        Color daggerColor = new Color("#721e1e");
+
+        // Execute attack with complete attacker flurry + hit impact node VFX
         await DamageCmd.Attack(DynamicVars.Damage.BaseValue)
             .FromCard(this)
             .Targeting(play.Target)
-            .WithHitFx("vfx/vfx_attack_slash")
+            .WithAttackerFx(() => NDaggerSprayFlurryVfx.Create(Owner.Creature, daggerColor, true))
+            .WithHitVfxNode((target) => NDaggerSprayImpactVfx.Create(target, daggerColor,  true))
             .Execute(choiceContext);
-        await PowerCmd.Apply<RegenPower>(choiceContext, this.Owner.Creature, this.DynamicVars["RegenPower"].BaseValue, this.Owner.Creature, (CardModel) this);
 
+        // Apply Regen Power
+        await PowerCmd.Apply<RegenPower>(
+            choiceContext, 
+            Owner.Creature, 
+            DynamicVars["RegenPower"].BaseValue, 
+            Owner.Creature, 
+            (CardModel)this
+        );
     }
 
     protected override void OnUpgrade()

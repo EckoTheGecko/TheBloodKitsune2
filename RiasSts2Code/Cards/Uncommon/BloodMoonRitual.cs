@@ -13,11 +13,11 @@ public class BloodMoonRitual() : RiasSts2Card(2,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
+    protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         ..MakeCalculatedVar("ExhaustPile", 0,(card,_)=> PileType.Exhaust.GetPile(card.Owner).Cards.Count), ];
     //Get number of cards in exhaust
     
-    protected override HashSet<CardTag> CanonicalTags => [CardTag.Strike];
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust]; //makes it exhaust after player and adds the word to the bottom of card automatically
     protected override async Task OnPlay(

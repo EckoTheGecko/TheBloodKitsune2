@@ -14,6 +14,7 @@ public class ExplodingBlood() : RiasSts2Card(2,
     CardType.Power, CardRarity.Uncommon,
     TargetType.AllEnemies)
 {
+    protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<ExplodingBloodPower>("ExplodingBloodPower",3)];
 
     protected override async Task OnPlay(

@@ -17,6 +17,8 @@ public class BloodDagger() : RiasSts2Card(1,
     CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
+    
+    protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move), new PowerVar<VulnerablePower>(1).WithTooltip("TALISMAN")];
 
     protected override async Task OnPlay(
