@@ -219,5 +219,14 @@
   "RIASSTS2-SCARLET_PIERCE.title": "Scarlet Pierce",
 
   "RIASSTS2-SPIRIT_TORII_GATE.description": "#Deal !D! damage and apply !VulnerablePower! *Vulnerable to ALL enemies.\nGain !TalismanPower! [color=#B71D5A]Talisman(s)[/color].",
-  "RIASSTS2-SPIRIT_TORII_GATE.title": "Spirit Torii Gate"
+  "RIASSTS2-SPIRIT_TORII_GATE.title": "Spirit Torii Gate",
+
+  "RIASSTS2-ENHANCER.description": "#Give ALL players !DexterityPower! *Dexterity.",
+  "RIASSTS2-ENHANCER.title": "Enhancer",
+
+  "RIASSTS2-BLOOD_PACT.description": "#Give ALL players !TalismanPower! [color=#B71D5A]Talisman(s)[/color].",
+  "RIASSTS2-BLOOD_PACT.title": "Blood Pact",
+
+  "RIASSTS2-RITES_OF_PROTECTION.description": "#Whenever you gain a [color=#B71D5A]Talisman[/color], give ALL players !RitesOfProtectionPower! *Block.",
+  "RIASSTS2-RITES_OF_PROTECTION.title": "Rites Of Protection"
 }

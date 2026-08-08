@@ -4,10 +4,30 @@
   "RIASSTS2-HIGANBANA_RELIC.title": "Higanbana",
 
   "RIASSTS2-TALISMANS_RELIC.description": "#Gain a Talisman when you Lose HP from any source.",
-  "RIASSTS2-TALISMANS_RELIC.flavor": "Talismans written with blood. Incredibly explosive blood.",
+  "RIASSTS2-TALISMANS_RELIC.flavor": "A gift from Inari. Talismans written with blood; incredibly explosive blood.",
   "RIASSTS2-TALISMANS_RELIC.title": "Blood Talismans",
 
   "MEGACRIT-BUCKET_OF_CHICKEN_RELIC.description": "#You can now gain *Dexterity at *Rest *Sites (3 times max).",
   "MEGACRIT-BUCKET_OF_CHICKEN_RELIC.flavor": "After a long day of kicking ass and being a rude fox, Rias loves to kick back with a big bucket of chicken.",
-  "MEGACRIT-BUCKET_OF_CHICKEN_RELIC.title": "Bucket Of Chicken"
+  "MEGACRIT-BUCKET_OF_CHICKEN_RELIC.title": "Bucket Of Chicken",
+
+  "RIASSTS2-PROTECTION_TALISMANS_RELIC.description": "#Whenever you lose HP on your turn, gain !B! *Block.",
+  "RIASSTS2-PROTECTION_TALISMANS_RELIC.flavor": "A gift from Inari. Provides protection to the wielder in times of need.",
+  "RIASSTS2-PROTECTION_TALISMANS_RELIC.title": "Protection Talismans",
+
+  "RIASSTS2-VENOMOUS_TALISMANS_RELIC.description": "#When attacked, apply !PoisonPower! *Poison to the attacker.",
+  "RIASSTS2-VENOMOUS_TALISMANS_RELIC.flavor": "A gift from Inari. Poisons those who intend to cause the wielder harm.",
+  "RIASSTS2-VENOMOUS_TALISMANS_RELIC.title": "Venomous Talismans",
+
+  "RIASSTS2-ENERGIZED_TALISMANS_RELIC.description": "#When you lose HP, trigger the passive ability of your rightmost Orb.",
+  "RIASSTS2-ENERGIZED_TALISMANS_RELIC.flavor": "A gift from Inari. Boosting the Defect's power when in danger.",
+  "RIASSTS2-ENERGIZED_TALISMANS_RELIC.title": "Energized Talisman",
+
+  "RIASSTS2-CURSED_TALISMANS_RELIC.description": "#Whenever *Osty loses HP, apply *Doom to the attacker equal to HP lost.",
+  "RIASSTS2-CURSED_TALISMANS_RELIC.flavor": "A gift from Inari. Dooms enemies who would dare to harm your cute little guy, Osty.",
+  "RIASSTS2-CURSED_TALISMANS_RELIC.title": "Cursed Talismans",
+
+  "RIASSTS2-CELESTIAL_TALISMANS_RELIC.description": "Whenever you lose HP, gain {Stars:starIcons()}.",
+  "RIASSTS2-CELESTIAL_TALISMANS_RELIC.flavor": "A gift from Inari. Calling the power of the heavens to aid The Regent.",
+  "RIASSTS2-CELESTIAL_TALISMANS_RELIC.title": "CelestialTalismansRelic"
 }

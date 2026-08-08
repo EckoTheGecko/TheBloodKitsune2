@@ -57,5 +57,9 @@
 
   "RIASSTS2-LOYALTY_POWER.description": "Whenever you Exhaust a card, gain 0 Talisman.",
   "RIASSTS2-LOYALTY_POWER.smartDescription": "#Whenever you *Exhaust a card, gain {Amount} [color=#B71D5A]Talisman(s)[/color].",
-  "RIASSTS2-LOYALTY_POWER.title": "Loyalty"
+  "RIASSTS2-LOYALTY_POWER.title": "Loyalty",
+
+  "RIASSTS2-RITES_OF_PROTECTION_POWER.description": "Whenever you gain a [color=#B71D5A]Talisman[/color], give ALL players 0 *Block.",
+  "RIASSTS2-RITES_OF_PROTECTION_POWER.smartDescription": "#Whenever you gain a [color=#B71D5A]Talisman[/color], give ALL players {Amount} *Block.",
+  "RIASSTS2-RITES_OF_PROTECTION_POWER.title": "Rites Of Protection"
 }

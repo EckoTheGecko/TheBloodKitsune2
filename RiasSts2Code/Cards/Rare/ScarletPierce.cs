@@ -30,6 +30,6 @@ public class ScarletPierce() : RiasSts2Card(2,
 
     protected override void OnUpgrade()
     {
-
+        EnergyCost.UpgradeBy(-1);
     }
 }

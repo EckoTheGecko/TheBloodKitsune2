@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.Models.Characters;
 using MegaCrit.Sts2.Core.Models.Relics;
 using MegaCrit.Sts2.Core.Runs;
 using RiasSts2.RiasSts2Code.Cards;
+using RiasSts2.RiasSts2Code.Powers;
 using RiasSts2.RiasSts2Code.Relics;
 
 namespace RiasSts2.RiasSts2Code.Ancient;
@@ -39,19 +40,19 @@ public class Inari : CustomAncientModel
         switch (characterModel)
         {
             case Ironclad:
-                return [AncientOption<YummyCookie>()];
+                return [AncientOption<ProtectionTalismansRelic>()];
 
             case Silent:
-                return [AncientOption<OldCoin>()];
+                return [AncientOption<VenomousTalismansRelic>()];
 
             case Defect:
-                return [AncientOption<GamblingChip>()];
+                return [AncientOption<EnergizedTalismansRelic>()];
 
             case Necrobinder:
-                return [AncientOption<RedSkull>()];
+                return [AncientOption<CursedTalismansRelic>()];
 
             case Regent:
-                return [AncientOption<SneckoEye>()];
+                return [AncientOption<CelestialTalismansRelic>()];
 
             case Character.RiasSts2:
                 return [AncientOption<TalismansRelic>()];

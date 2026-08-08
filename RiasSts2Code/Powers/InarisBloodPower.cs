@@ -30,8 +30,8 @@ public class InarisBloodPower() : RiasSts2Power
     {
         if (target != this.Owner || result.UnblockedDamage <= 0 || this.CombatState.CurrentSide != this.Owner.Side)
             return;
-        {
-            TalismanPower talismanPower = await PowerCmd.Apply<TalismanPower>(choiceContext, this.Owner, (Decimal) this.Amount, this.Owner, (CardModel) null);
-        }
+        
+        TalismanPower talismanPower = await PowerCmd.Apply<TalismanPower>(choiceContext, this.Owner, (Decimal) this.Amount, this.Owner, (CardModel) null);
+        
     }
 }
