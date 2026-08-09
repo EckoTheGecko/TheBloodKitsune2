@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8etgbots25cf"
-path="res://.godot/imported/ersatz_bloodmoon_rias.png-c83de89ceb242d54bebfe78bbfc7c874.ctex"
+uid="uid://gpw4t71v0aj0"
+path="res://.godot/imported/ersatz.png-b1e3a803f4ac6f9d61637094a1be4840.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RiasSts2/images/card_portraits/big/ersatz_bloodmoon_rias.png"
-dest_files=["res://.godot/imported/ersatz_bloodmoon_rias.png-c83de89ceb242d54bebfe78bbfc7c874.ctex"]
+source_file="res://RiasSts2/images/card_portraits/big/ersatz.png"
+dest_files=["res://.godot/imported/ersatz.png-b1e3a803f4ac6f9d61637094a1be4840.ctex"]
 
 [params]
 

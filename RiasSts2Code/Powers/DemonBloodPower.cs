@@ -29,7 +29,9 @@ public class DemonBloodPower() : RiasSts2Power
 
         int taliAmount = Owner.GetPowerAmount<TalismanPower>();
         int damagePerHit = taliAmount * 4;
-
+        
+        if (taliAmount == 0)
+            return;
         // Loop and do a separate hit for each stack of this power
         for (int i = 0; i < Amount; i++)
         {

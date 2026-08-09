@@ -9,7 +9,7 @@ using RiasSts2.RiasSts2Code.Powers;
 namespace RiasSts2.RiasSts2Code.Cards.Rare;
 
 
-public class Decimate() : RiasSts2Card(3,
+public class Decimate() : RiasSts2Card(2,
     CardType.Attack, CardRarity.Rare,
     TargetType.AllEnemies)
 {
@@ -35,6 +35,7 @@ public class Decimate() : RiasSts2Card(3,
 
     protected override void OnUpgrade()
     {
-
+        DynamicVars.Damage.UpgradeValueBy(10);
+        DynamicVars.Block.UpgradeValueBy(5);
     }
 }

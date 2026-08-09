@@ -12,7 +12,7 @@ namespace RiasSts2.RiasSts2Code.Cards;
 
 
 public class DemonicStrength() : RiasSts2Card(2,
-    CardType.Power, CardRarity.Uncommon,
+    CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<DemonicStrengthPower>("DemonicStrengthPower",2)];

@@ -62,6 +62,8 @@ public class TalismanPower() : RiasSts2Power
 
     public override async Task BeforeSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
+        if (!participants.Contains(Owner))
+            return;
         await PowerCmd.Remove(this);
     }
 }

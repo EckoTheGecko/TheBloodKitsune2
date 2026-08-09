@@ -16,8 +16,7 @@ public class BloodInscription() : RiasSts2Card(2,
 {
     protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(15, ValueProp.Move).WithTooltip("TALISMAN")];
-
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
+    
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
@@ -37,6 +36,7 @@ public class BloodInscription() : RiasSts2Card(2,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(5);
+        DynamicVars.Damage.UpgradeValueBy(3);
+        EnergyCost.UpgradeBy(-1);
     }
 }

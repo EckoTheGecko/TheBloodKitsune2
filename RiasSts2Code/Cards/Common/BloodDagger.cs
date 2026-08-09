@@ -19,7 +19,7 @@ public class BloodDagger() : RiasSts2Card(1,
 {
     
     protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move), new PowerVar<VulnerablePower>(1).WithTooltip("TALISMAN")];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(3, ValueProp.Move), new PowerVar<VulnerablePower>(1).WithTooltip("TALISMAN")];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

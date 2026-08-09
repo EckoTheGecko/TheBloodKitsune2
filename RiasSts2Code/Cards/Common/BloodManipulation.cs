@@ -17,8 +17,8 @@ namespace RiasSts2.RiasSts2Code.Cards;
 
 
 public class BloodManipulation() : RiasSts2Card(1,
-    CardType.Skill, CardRarity.Common,
-    TargetType.Self)
+    CardType.Attack, CardRarity.Common,
+    TargetType.AnyEnemy)
 {
     
     protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
@@ -30,7 +30,7 @@ public class BloodManipulation() : RiasSts2Card(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CreatureCmd.GainBlock(Owner.Creature, (await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this).Targeting(play.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext)).Results.SelectMany(r => r).Sum(r => r.TotalDamage + r.OverkillDamage), ValueProp.Move, play);
+        await CreatureCmd.GainBlock(Owner.Creature, (await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this).Targeting(play.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext)).Results.SelectMany(r => r).Sum(r => r.UnblockedDamage + r.OverkillDamage), ValueProp.Move, play);
     }
 
     protected override void OnUpgrade()

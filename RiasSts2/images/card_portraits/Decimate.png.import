@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ci1d4h0xy5of6"
-path="res://.godot/imported/Decimate.png-81814a5d0b8f9a81e404321d72b82520.ctex"
+uid="uid://rcnvkr66d1pi"
+path="res://.godot/imported/decimate.png-9b7096c1255106bf788e889b2244d236.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RiasSts2/images/card_portraits/Decimate.png"
-dest_files=["res://.godot/imported/Decimate.png-81814a5d0b8f9a81e404321d72b82520.ctex"]
+source_file="res://RiasSts2/images/card_portraits/decimate.png"
+dest_files=["res://.godot/imported/decimate.png-9b7096c1255106bf788e889b2244d236.ctex"]
 
 [params]
 

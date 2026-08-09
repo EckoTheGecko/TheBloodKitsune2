@@ -25,7 +25,7 @@ public class RitesOfProtectionPower() : RiasSts2Power
             return;
         if (power is TalismanPower && power.Owner == this.Owner)
         {
-            BlockVar blockVar = new BlockVar(Amount * amount, ValueProp.Move);
+            BlockVar blockVar = new BlockVar(Amount * amount, ValueProp.Unpowered);
             foreach (Creature creature in CombatState.GetTeammatesOf(Owner).Where(c => c != null && c.IsAlive && c.IsPlayer))
                 await CreatureCmd.GainBlock(creature, blockVar, null);
         }

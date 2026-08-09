@@ -191,10 +191,10 @@
   "RIASSTS2-INARIS_BLOOD.description": "#Whenever you lose HP on your turn, gain !InarisBloodPower! [color=#B71D5A]Talisman(s)[/color]",
   "RIASSTS2-INARIS_BLOOD.title": "Inaris Blood",
 
-  "RIASSTS2-KAMIS_SERVANT.description": "Whenever you gain a [color=#B71D5A]Talisman[/color], gain !KamisServantPower! *Block.",
+  "RIASSTS2-KAMIS_SERVANT.description": "#Whenever you gain a [color=#B71D5A]Talisman[/color], gain !KamisServantPower! *Block.",
   "RIASSTS2-KAMIS_SERVANT.title": "Kami's Servant",
 
-  "RIASSTS2-LAST_RESORT.description": "#If you have less than 50% of your max HP (!halfHP!), gain !TalismanPower! [color=#B71D5A]Talisman(s)[/color].",
+  "RIASSTS2-LAST_RESORT.description": "#If you have less than 50% of your max HP ([blue]!halfHP![/blue]), gain !TalismanPower! [color=#B71D5A]Talisman(s)[/color].",
   "RIASSTS2-LAST_RESORT.title": "Last Resort",
 
   "RIASSTS2-LASTING_BOND.description": "#Whenever you lose HP on your turn, gain !LastingBondPower! *Strength.",
@@ -206,13 +206,13 @@
   "RIASSTS2-MASSACRE.description": "#Deal !D! damage to ALL enemies. Heal for unblocked damage dealt.",
   "RIASSTS2-MASSACRE.title": "Massacre",
 
-  "RIASSTS2-MIND_PALACE.description": "#Reduce the cost of ALL cards currently in your *Draw *Pile by 1 [E].\n(Minimum 1).",
+  "RIASSTS2-MIND_PALACE.description": "#Reduce the cost of ALL cards currently in your *Draw *Pile by 1 [E].\n [color=#888888]Minimum 1[/color]",
   "RIASSTS2-MIND_PALACE.title": "Mind Palace",
 
   "RIASSTS2-OATH_TREASURE.description": "#Sacrifice all of your [color=#B71D5A]Talismans[/color].\nHeal 1 for each [color=#B71D5A]Talisman[/color] lost.",
   "RIASSTS2-OATH_TREASURE.title": "Oath Treasure",
 
-  "RIASSTS2-REMNANT.description": "#Deal !D! damage.\nIf you have less than 50% HP (!halfHP!), this card costs 0[E].",
+  "RIASSTS2-REMNANT.description": "#Deal !D! damage.\nCan only be played if you have less than 50% HP ([blue]!halfHP![/blue]).",
   "RIASSTS2-REMNANT.title": "Remnant",
 
   "RIASSTS2-SCARLET_PIERCE.description": "#Deal !calcDamageBase! damage.\nDeals !calcDamageExtra! additional damage for ALL of your cards containing 'Blood'. (!calcDamage!)",

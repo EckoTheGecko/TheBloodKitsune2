@@ -11,7 +11,7 @@ using RiasSts2.RiasSts2Code.Cards;
 namespace RiasSts2.RiasSts2Code.Cards.Rare;
 
 
-public class Ersatz() : RiasSts2Card(2,
+public class Ersatz() : RiasSts2Card(1,
     CardType.Attack, CardRarity.Rare,
     TargetType.AnyEnemy)
 {
@@ -26,9 +26,9 @@ public class Ersatz() : RiasSts2Card(2,
             .Targeting(play.Target)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
-        await PowerCmd.Apply<WeakPower>(choiceContext, Owner.Creature, DynamicVars["WeakPower"].BaseValue, Owner.Creature, this);
-        await PowerCmd.Apply<VulnerablePower>(choiceContext, Owner.Creature, DynamicVars["VulnerablePower"].BaseValue, Owner.Creature, this);
-
+        await PowerCmd.Apply<WeakPower>(choiceContext, play.Target, DynamicVars["WeakPower"].BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<VulnerablePower>(choiceContext, play.Target, DynamicVars["VulnerablePower"].BaseValue, Owner.Creature, this);
+    
     }
 
     protected override void OnUpgrade()

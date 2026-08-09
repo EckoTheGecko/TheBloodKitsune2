@@ -20,10 +20,13 @@ public class CorruptionMaskPower() : RiasSts2Power
 
     public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
     {
-        CardSelectorPrefs prefs = new CardSelectorPrefs(CardSelectorPrefs.ExhaustSelectionPrompt, 1);
-        CardModel card = (await CardSelectCmd.FromHand(choiceContext, player, prefs, null, this)).FirstOrDefault();
-        if (card != null) //if card selected, exhaust it
-            await CardCmd.Exhaust(choiceContext, card);
-        await PowerCmd.Apply<ThornsPower>(choiceContext, Owner, Amount, Owner, null);
+        if (player == Owner.Player)
+        {
+            CardSelectorPrefs prefs = new CardSelectorPrefs(CardSelectorPrefs.ExhaustSelectionPrompt, 1);
+            CardModel card = (await CardSelectCmd.FromHand(choiceContext, player, prefs, null, this)).FirstOrDefault();
+            if (card != null) //if card selected, exhaust it
+                await CardCmd.Exhaust(choiceContext, card);
+            await PowerCmd.Apply<ThornsPower>(choiceContext, Owner, Amount, Owner, null);
+        }
     }
 }
