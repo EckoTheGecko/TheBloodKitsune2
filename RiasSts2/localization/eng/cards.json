@@ -137,8 +137,8 @@
   "RIASSTS2-RESOLVE.description": "#Double your current *Block.",
   "RIASSTS2-RESOLVE.title": "Resolve",
   
-  "RIASSTS2-SANGUINE_SHIELD.description": "#Gain !CalculationExtra! *Block for each [color=#B71D5A]Talisman[/color] you have.\n(!CalculatedBlock!)",
-  "RIASSTS2-SANGUINE_SHIELD.title": "Sanguine Shield",
+  "RIASSTS2-BLOOD_BARRIER.description": "#Gain !CalculationExtra! *Block for each [color=#B71D5A]Talisman[/color] you have.\n(!CalculatedBlock!)",
+  "RIASSTS2-BLOOD_BARRIER.title": "Blood Barrier",
 
   "RIASSTS2-BLOOD_MANIPULATION.description": "#Deal !D! damage.\nGain *Block equal to damage dealt.",
   "RIASSTS2-BLOOD_MANIPULATION.title": "Blood Manipulation",
@@ -161,8 +161,8 @@
   "RIASSTS2-BERSERK.description": "#Deal !D! damage to ALL enemies.\nLose !HpLoss! HP.\nGain !TalismanPower! [color=#B71D5A]Talisman[/color].",
   "RIASSTS2-BERSERK.title": "Berserk",
 
-  "RIASSTS2-BLOOD_BARRIER.description": "#ALL players gain !PlatingPower! *Plating.",
-  "RIASSTS2-BLOOD_BARRIER.title": "Blood Barrier",
+  "RIASSTS2-SANGUINE_SHIELD.description": "#ALL players gain !PlatingPower! *Plating.",
+  "RIASSTS2-SANGUINE_SHIELD.title": "Sanguine Shield",
 
   "RIASSTS2-BLOOD_SURGE.description": "#Discard 2 cards.\nGain !StrengthPower! *Strength.",
   "RIASSTS2-BLOOD_SURGE.title": "Blood Surge",
@@ -173,7 +173,7 @@
   "RIASSTS2-DECIMATE.description": "#Deal !D! damage to ALL enemies.\nIf you have no [color=#B71D5A]Talismans[/color], gain !B! *Block.",
   "RIASSTS2-DECIMATE.title": "Decimate",
 
-  "RIASSTS2-ENDWALKER.description": "#At the start of your turn, gain !EndwalkerPower! [color=#B71D5A]Talisman(s)[/color] and gain 1 [E].",
+  "RIASSTS2-ENDWALKER.description": "#At the start of your turn, gain !EndwalkerPower! [color=#B71D5A]Talisman(s)[/color] and gain 1 [E+E+].",
   "RIASSTS2-ENDWALKER.title": "Endwalker",
 
   "RIASSTS2-DEMON_BLOOD.description": "#At the end of your turn, your [color=#B71D5A]Talismans[/color] detonate !DemonBloodPower! more time(s).",
@@ -191,7 +191,7 @@
   "RIASSTS2-INARIS_BLOOD.description": "#Whenever you lose HP on your turn, gain !InarisBloodPower! [color=#B71D5A]Talisman(s)[/color]",
   "RIASSTS2-INARIS_BLOOD.title": "Inaris Blood",
 
-  "RIASSTS2-KAMIS_SERVANT.description": "#Whenever you gain a [color=#B71D5A]Talisman[/color], gain !KamisServantPower! *Block.",
+  "RIASSTS2-KAMIS_SERVANT.description": "#Whenever you gain a [color=#B71D5A]Talisman[/color] on your turn, gain !KamisServantPower! *Block.",
   "RIASSTS2-KAMIS_SERVANT.title": "Kami's Servant",
 
   "RIASSTS2-LAST_RESORT.description": "#If you have less than 50% of your max HP ([blue]!halfHP![/blue]), gain !TalismanPower! [color=#B71D5A]Talisman(s)[/color].",
@@ -228,5 +228,14 @@
   "RIASSTS2-BLOOD_PACT.title": "Blood Pact",
 
   "RIASSTS2-RITES_OF_PROTECTION.description": "#Whenever you gain a [color=#B71D5A]Talisman[/color], give ALL players !RitesOfProtectionPower! *Block.",
-  "RIASSTS2-RITES_OF_PROTECTION.title": "Rites Of Protection"
+  "RIASSTS2-RITES_OF_PROTECTION.title": "Rites Of Protection",
+
+  "RIASSTS2-OATHKEEPER.description": "#Choose any number of cards to *Exhaust.\nGain !VigorPower! *Vigor for each card *Exhausted.",
+  "RIASSTS2-OATHKEEPER.title": "Oathkeeper",
+
+  "RIASSTS2-BLOOD_TETHER.description": "#Gain !TalismanPower! [color=#B71D5A]Talisman[/color].\nApply !WeakPower! *Weak.",
+  "RIASSTS2-BLOOD_TETHER.title": "Blood Tether",
+
+  "RIASSTS2-HOMERUN.description": "#Deal !CalculatedDamage! damage.\n*Strength affects this card !ExtraDamage! times.",
+  "RIASSTS2-HOMERUN.title": "Homerun"
 }

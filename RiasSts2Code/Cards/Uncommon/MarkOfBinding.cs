@@ -12,7 +12,7 @@ using RiasSts2.RiasSts2Code.Powers;
 namespace RiasSts2.RiasSts2Code.Cards;
 
 
-public class MarkOfBinding() : RiasSts2Card(2,
+public class MarkOfBinding() : RiasSts2Card(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
@@ -45,5 +45,6 @@ public class MarkOfBinding() : RiasSts2Card(2,
     {
         DynamicVars.Power<VulnerablePower>().UpgradeValueBy(1);
         DynamicVars.Power<WeakPower>().UpgradeValueBy(1);
+        DynamicVars.Power<TalismanPower>().UpgradeValueBy(1);
     }
 }

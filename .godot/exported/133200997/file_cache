@@ -4,3 +4,5 @@ res://RiasSts2/images/charui/rias_static.tscn::7f1f40291fccd36400c1dcbecd8cbdb2:
 res://RiasSts2/images/charui/rias_static_merchant.tscn::ad99e707358d34588c28446a6e5e20b7::1785328807::res://.godot/exported/133200997/export-d6569b8698756acf80478c1664f4fd29-rias_static_merchant.scn
 res://RiasSts2/images/charui/rias_static_rest.tscn::8c71eaff7cd52a116003e7d70997ee9d::1785159293::res://.godot/exported/133200997/export-89dc76df7235ff6e65bd96b9f3bc4ac2-rias_static_rest.scn
 res://RiasSts2/images/animations/rias_anims.tscn::6f509bcaa81b6b8685338fdea20cc88f::1785514538::res://.godot/exported/133200997/export-be23b0a819f2b48fb5e5e97c03aa90cb-rias_anims.scn
+res://RiasSts2/images/charui/silent_merchant.tscn::19fe8754cc4fd4cf1000f666c9f76709::1786303406::res://.godot/exported/133200997/export-235c1c70e8dd5c459acdb831ba3ef88a-silent_merchant.scn
+res://RiasSts2/images/charui/silent_merchant_skel_data.tres::c6fb067bce067aaa72df3ed12f6e70a7::1786303406::res://.godot/exported/133200997/export-6d828bc7cce73a88931c2f6d92c0673b-silent_merchant_skel_data.res

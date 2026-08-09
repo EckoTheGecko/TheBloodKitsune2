@@ -9,7 +9,7 @@ using RiasSts2.RiasSts2Code.Powers;
 namespace RiasSts2.RiasSts2Code.Cards.Rare;
 
 
-public class LastingBond() : RiasSts2Card(2,
+public class LastingBond() : RiasSts2Card(1,
     CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {
@@ -25,5 +25,6 @@ public class LastingBond() : RiasSts2Card(2,
     protected override void OnUpgrade()
     {
         AddKeyword(CardKeyword.Innate);
+        DynamicVars.Power<LastingBondPower>().UpgradeValueBy(1);
     }
 }

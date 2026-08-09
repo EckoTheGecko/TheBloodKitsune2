@@ -29,7 +29,7 @@ public class EndwalkerPower() : RiasSts2Power
             return;
         Flash();
         TalismanPower talismanPower = await PowerCmd.Apply<TalismanPower>(new ThrowingPlayerChoiceContext(), Owner, Amount, Owner, (CardModel) null);
-        await PlayerCmd.GainEnergy(1, Owner.Player);
+        await PlayerCmd.GainEnergy(Amount, Owner.Player);
     }
     
 }

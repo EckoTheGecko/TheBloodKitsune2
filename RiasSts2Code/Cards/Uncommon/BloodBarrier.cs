@@ -8,7 +8,7 @@ using RiasSts2.RiasSts2Code.Powers;
 
 namespace RiasSts2.RiasSts2Code.Cards;
 
-public class SanguineShield() : RiasSts2Card(1,
+public class BloodBarrier() : RiasSts2Card(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
@@ -27,6 +27,6 @@ public class SanguineShield() : RiasSts2Card(1,
     }
     protected override void OnUpgrade()
     {
-        DynamicVars.CalculatedBlock.UpgradeValueBy(1);
+        DynamicVars.CalculationExtra.UpgradeValueBy(1);
     }
 }

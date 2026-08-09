@@ -10,7 +10,7 @@ using RiasSts2.RiasSts2Code.Cards;
 namespace RiasSts2.RiasSts2Code.Cards;
 
 
-public class PulseSlash() : RiasSts2Card(2,
+public class PulseSlash() : RiasSts2Card(1,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AllEnemies)
 {
@@ -31,6 +31,6 @@ public class PulseSlash() : RiasSts2Card(2,
 
     protected override void OnUpgrade()
     {
-
+        DynamicVars.Repeat.UpgradeValueBy(1);
     }
 }

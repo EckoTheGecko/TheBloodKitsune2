@@ -1,5 +1,5 @@
 {
-  "RIASSTS2-HIGANBANA_RELIC.description": "#Gain an additional [gold]Energy[/gold] on the first turn of combat.",
+  "RIASSTS2-HIGANBANA_RELIC.description": "#Gain an additional [E] on the first turn of combat.",
   "RIASSTS2-HIGANBANA_RELIC.flavor": "Known as a Spider Lily, Death Blossom, or the Flower of the Dead.",
   "RIASSTS2-HIGANBANA_RELIC.title": "Higanbana",
 
@@ -29,5 +29,9 @@
 
   "RIASSTS2-CELESTIAL_TALISMANS_RELIC.description": "Whenever you lose HP, gain {Stars:starIcons()}.",
   "RIASSTS2-CELESTIAL_TALISMANS_RELIC.flavor": "A gift from Inari. Calling the power of the heavens to aid The Regent.",
-  "RIASSTS2-CELESTIAL_TALISMANS_RELIC.title": "CelestialTalismansRelic"
+  "RIASSTS2-CELESTIAL_TALISMANS_RELIC.title": "CelestialTalismansRelic",
+
+  "RIASSTS2-AFTERLIFE_BLOOM_RELIC.description": "#Gain 2 additional [E] on the first turn of combat.",
+  "RIASSTS2-AFTERLIFE_BLOOM_RELIC.flavor": "The symbol of death and afterlife, now guides lost souls through the spirit realm.",
+  "RIASSTS2-AFTERLIFE_BLOOM_RELIC.title": "Afterlife Bloom"
 }

@@ -11,7 +11,7 @@ using RiasSts2.RiasSts2Code.Cards;
 namespace RiasSts2.RiasSts2Code.Cards.Rare;
 
 
-public class BloodBarrier() : RiasSts2Card(2,
+public class SanguineShield() : RiasSts2Card(2,
     CardType.Power, CardRarity.Rare,
     TargetType.AllAllies)
 {

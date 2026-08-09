@@ -11,7 +11,7 @@ using RiasSts2.RiasSts2Code.Powers;
 namespace RiasSts2.RiasSts2Code.Cards.Rare;
 
 
-public class BloodPact() : RiasSts2Card(2,
+public class BloodPact() : RiasSts2Card(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.AllAllies)
 {

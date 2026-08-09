@@ -19,7 +19,7 @@ public class ServantsTrinket() : RiasSts2Card(1,
         CardPlay play)
     {
         CardModel cardModel = (await CardPileCmd.Draw(choiceContext, 1, Owner)).FirstOrDefault();
-        if (cardModel == null || cardModel.Keywords.Contains(CardKeyword.Exhaust))
+        if (cardModel != null && cardModel.Keywords.Contains(CardKeyword.Exhaust))
             await CardCmd.AutoPlay(choiceContext, cardModel, null);
         
     }

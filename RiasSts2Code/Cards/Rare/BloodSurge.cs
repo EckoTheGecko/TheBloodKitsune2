@@ -11,13 +11,13 @@ using RiasSts2.RiasSts2Code.Cards;
 namespace RiasSts2.RiasSts2Code.Cards.Rare;
 
 
-public class BloodSurge() : RiasSts2Card(2,
+public class BloodSurge() : RiasSts2Card(1,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {
     
     protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>("StrengthPower",2), new CardsVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>("StrengthPower",3), new CardsVar(2)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

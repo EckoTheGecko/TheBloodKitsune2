@@ -32,6 +32,6 @@ public class Interpose() : RiasSts2Card(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars["PlayerStr"].UpgradeValueBy(-2);
+        DynamicVars["EnemyStr"].UpgradeValueBy(-2);
     }
 }

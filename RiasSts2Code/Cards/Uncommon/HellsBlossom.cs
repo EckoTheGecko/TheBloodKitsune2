@@ -15,7 +15,7 @@ public class HellsBlossom() : RiasSts2Card(2,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move), new RepeatVar(3), new PowerVar<TalismanPower>("TalismanPower",2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move), new RepeatVar(3), new PowerVar<TalismanPower>("TalismanPower",3)];
 
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
@@ -37,6 +37,6 @@ public class HellsBlossom() : RiasSts2Card(2,
     protected override void OnUpgrade()
     {
         DynamicVars.Damage.UpgradeValueBy(2);
-        DynamicVars.Power<TalismanPower>().UpgradeValueBy(1);
+        RemoveKeyword(CardKeyword.Exhaust);
     }
 }

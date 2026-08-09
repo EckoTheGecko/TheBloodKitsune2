@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using BaseLib.Extensions;
+using BaseLib.Utils;
 using Godot;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -9,21 +10,25 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
 using MegaCrit.Sts2.Core.ValueProps;
+using RiasSts2.RiasSts2Code.Character;
 
 namespace RiasSts2.RiasSts2Code.Cards;
-
+[Pool(typeof(TokenCardPool))]
 public class ConjuredDagger() : RiasSts2Card(0,
     CardType.Attack, CardRarity.Token,
     TargetType.AnyEnemy)
 {
+    
+
     protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4, ValueProp.Move), new PowerVar<RegenPower>(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4, ValueProp.Move), new HealVar(2)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -43,18 +48,13 @@ public class ConjuredDagger() : RiasSts2Card(0,
             .Execute(choiceContext);
 
         // Apply Regen Power
-        await PowerCmd.Apply<RegenPower>(
-            choiceContext, 
-            Owner.Creature, 
-            DynamicVars["RegenPower"].BaseValue, 
-            Owner.Creature, 
-            (CardModel)this
-        );
+        await CreatureCmd.Heal(Owner.Creature, DynamicVars.Heal.BaseValue);
+
     }
 
     protected override void OnUpgrade()
     {
         DynamicVars.Damage.UpgradeValueBy(1);
-        DynamicVars.Power<RegenPower>().UpgradeValueBy(1);
+        DynamicVars.Heal.UpgradeValueBy(1);
     }
 }

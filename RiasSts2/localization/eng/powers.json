@@ -32,7 +32,7 @@
   "RIASSTS2-CORRUPTION_MASK_POWER.title": "Corruption Mask",
 
   "RIASSTS2-ENDWALKER_POWER.description": "At the start of your turn, gain 0 [color=#B71D5A]Talisman(s)[/color] and gain 1 [E].",
-  "RIASSTS2-ENDWALKER_POWER.smartDescription": "#At the start of your turn, gain {Amount} [color=#B71D5A]Talisman(s)[/color] and gain 1 [E].",
+  "RIASSTS2-ENDWALKER_POWER.smartDescription": "#At the start of your turn, gain {Amount} [color=#B71D5A]Talisman(s)[/color] and gain {Amount} [E].",
   "RIASSTS2-ENDWALKER_POWER.title": "Endwalker",
 
   "RIASSTS2-DEMON_BLOOD_POWER.description": "#At the end of your turn, your [color=#B71D5A]Talismans[/color] detonate 0 more time(s).",

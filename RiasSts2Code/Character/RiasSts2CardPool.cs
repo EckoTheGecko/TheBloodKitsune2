@@ -1,6 +1,8 @@
 ﻿using BaseLib.Abstracts;
 using RiasSts2.RiasSts2Code.Extensions;
 using Godot;
+using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Models;
 
 namespace RiasSts2.RiasSts2Code.Character;
 
@@ -31,4 +33,6 @@ public class RiasSts2CardPool : CustomCardPoolModel
     public override Color DeckEntryCardColor => new("721e1e");
 
     public override bool IsColorless => false;
+    
+
 }

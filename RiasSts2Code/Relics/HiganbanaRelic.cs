@@ -3,6 +3,7 @@ using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
 using RiasSts2.RiasSts2Code.Relics;
 
 namespace RiasSts2.RiasSts2Code.Relics;
@@ -10,6 +11,10 @@ namespace RiasSts2.RiasSts2Code.Relics;
 
 public class HiganbanaRelic() : RiasSts2Relic
 {
+    
+    public override RelicModel GetUpgradeReplacement() => ModelDb.Relic<AfterlifeBloomRelic>();
+
+
     public override RelicRarity Rarity =>
         RelicRarity.Starter;
 
