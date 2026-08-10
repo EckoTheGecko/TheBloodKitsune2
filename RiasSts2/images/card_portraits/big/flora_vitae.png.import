@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcgiw1nuf7s0o"
-path="res://.godot/imported/unwavering_loyalty.png-1fd2a7506f776fabd4faa9d8e12b6e08.ctex"
+uid="uid://du1i17617pomo"
+path="res://.godot/imported/flora_vitae.png-acdc7a3e9c07a7003e1916dbdd27d53d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RiasSts2/images/card_portraits/big/unwavering_loyalty.png"
-dest_files=["res://.godot/imported/unwavering_loyalty.png-1fd2a7506f776fabd4faa9d8e12b6e08.ctex"]
+source_file="res://RiasSts2/images/card_portraits/big/flora_vitae.png"
+dest_files=["res://.godot/imported/flora_vitae.png-acdc7a3e9c07a7003e1916dbdd27d53d.ctex"]
 
 [params]
 

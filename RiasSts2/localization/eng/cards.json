@@ -95,7 +95,7 @@
   "RIASSTS2-ENDURANCE.description": "#Gain !B! *Block.\nGain !StrengthPower! *Strength.",
   "RIASSTS2-ENDURANCE.title": "Endurance",
 
-  "RIASSTS2-CONJURED_DAGGER.description": "#Deal !D! damage.\nGain !RegenPower! *Regen.",
+  "RIASSTS2-CONJURED_DAGGER.description": "#Deal !D! damage.\nHeal !Heal! HP.",
   "RIASSTS2-CONJURED_DAGGER.title": "Divine Blood Dagger",
 
   "RIASSTS2-ENVOY.description": "#Draw !C! cards.\nExhaust 1 card.\nReduce the cost of 1 random card in *Hand to 0 this combat.",
@@ -128,7 +128,7 @@
   "RIASSTS2-PAIN_TOLERANCE.description": "#Gain !B! *Block.\nGain !TalismanPower! [color=#B71D5A]Talisman(s)[/color].",
   "RIASSTS2-PAIN_TOLERANCE.title": "Pain Tolerance",
 
-  "RIASSTS2-PULSE_SLASH.description": "#Deal !D! damage twice and apply !VulnerablePower! *Vulnerable to ALL enemies.",
+  "RIASSTS2-PULSE_SLASH.description": "#Lose !HpLoss! HP.\nDeal !D! damage !Repeat! times and apply !VulnerablePower! *Vulnerable to ALL enemies.",
   "RIASSTS2-PULSE_SLASH.title": "Pulse Slash",
 
   "RIASSTS2-RAVAGING.description": "#Whenever you play an attack this turn, gain !RavagingPower! [color=#B71D5A]Talisman(s)[/color].",
@@ -143,7 +143,7 @@
   "RIASSTS2-BLOOD_MANIPULATION.description": "#Deal !D! damage.\nGain *Block equal to damage dealt.",
   "RIASSTS2-BLOOD_MANIPULATION.title": "Blood Manipulation",
 
-  "RIASSTS2-SEALED.description": "#*Exhaust your hand.\nGain a [color=#B71D5A]Talisman[/color] for each card *Exhausted.",
+  "RIASSTS2-SEALED.description": "#*Exhaust your hand.\nGain !TalismanPower! [color=#B71D5A]Talisman[/color] for each card *Exhausted.",
   "RIASSTS2-SEALED.title": "Sealed",
 
   "RIASSTS2-SERVANTS_TRINKET.description": "#Draw !C! card(s).\nIf it has *Exhaust, play it for 0 cost and draw !C! card(s).",
@@ -173,7 +173,7 @@
   "RIASSTS2-DECIMATE.description": "#Deal !D! damage to ALL enemies.\nIf you have no [color=#B71D5A]Talismans[/color], gain !B! *Block.",
   "RIASSTS2-DECIMATE.title": "Decimate",
 
-  "RIASSTS2-ENDWALKER.description": "#At the start of your turn, gain !EndwalkerPower! [color=#B71D5A]Talisman(s)[/color] and gain 1 [E+E+].",
+  "RIASSTS2-ENDWALKER.description": "#At the start of your turn, gain !EndwalkerPower! [color=#B71D5A]Talisman(s)[/color] and gain !EndwalkerPower! [E].",
   "RIASSTS2-ENDWALKER.title": "Endwalker",
 
   "RIASSTS2-DEMON_BLOOD.description": "#At the end of your turn, your [color=#B71D5A]Talismans[/color] detonate !DemonBloodPower! more time(s).",
@@ -185,7 +185,7 @@
   "RIASSTS2-EXORCISM.description": "#Deal damage equal to your missing HP.(!totalDamage!)",
   "RIASSTS2-EXORCISM.title": "Exorcism",
 
-  "RIASSTS2-GLUTTONY.description": "#At the start of your turn, gain !GluttonyPower! *Dexterity.",
+  "RIASSTS2-GLUTTONY.description": "#At the start of your turn, gain !GluttonyPower! [color=#B71D5A]Talisman(s)[/color].",
   "RIASSTS2-GLUTTONY.title": "Gluttony",
 
   "RIASSTS2-INARIS_BLOOD.description": "#Whenever you lose HP on your turn, gain !InarisBloodPower! [color=#B71D5A]Talisman(s)[/color]",
@@ -237,5 +237,29 @@
   "RIASSTS2-BLOOD_TETHER.title": "Blood Tether",
 
   "RIASSTS2-HOMERUN.description": "#Deal !CalculatedDamage! damage.\n*Strength affects this card !ExtraDamage! times.",
-  "RIASSTS2-HOMERUN.title": "Homerun"
+  "RIASSTS2-HOMERUN.title": "Homerun",
+
+  "RIASSTS2-FLORA_VITAE.description": "#Give all players 1 Divine Blood Dagger+++.",
+  "RIASSTS2-FLORA_VITAE.title": "Flora Vitae",
+
+  "RIASSTS2-QUICK_STAB.description": "#Deal !D! damage.\nDraw !C! card(s).",
+  "RIASSTS2-QUICK_STAB.title": "Quick Stab",
+
+  "RIASSTS2-BLOOD_WARD.description": "#Lose !HpLoss! HP.\nGain !B! *Block.\nDraw !C! card(s).",
+  "RIASSTS2-BLOOD_WARD.title": "Blood Ward",
+
+  "RIASSTS2-BLOOD_SACRIFICE.description": "#Lose !HpLoss! HP.\nGain !Energy! [E]",
+  "RIASSTS2-BLOOD_SACRIFICE.title": "Blood Sacrifice",
+
+  "RIASSTS2-NAP.description": "#Draw !C! card(s).\nHeal !Heal! HP.",
+  "RIASSTS2-NAP.title": "Nap",
+
+  "RIASSTS2-BOILING_BLOOD.description": "#Gain *Strength equal to your current [color=#B71D5A]Talismans[/color].",
+  "RIASSTS2-BOILING_BLOOD.title": "Boiling Blood",
+
+  "RIASSTS2-CORRUPTED_TALISMANS.description": "#[color=#B71D5A]Talismans[/color] deal an additional !CorruptedTalismansPower! damage when they detonate.",
+  "RIASSTS2-CORRUPTED_TALISMANS.title": "Corrupted Talismans",
+
+  "RIASSTS2-MOMENTUM.description": "#At the start of your turn Draw !MomentumPower! card(s).\n*Exhaust !MomentumPower! card(s).\nAdd !MomentumPower! *Divine *Blood *Dagger(s) to your hand.",
+  "RIASSTS2-MOMENTUM.title": "Momentum"
 }

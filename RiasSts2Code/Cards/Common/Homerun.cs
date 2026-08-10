@@ -15,7 +15,7 @@ public class Homerun() : RiasSts2Card(2,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        ..MakeCalculatedDamage(14, (card, target) => card.Owner.Creature.GetPowerAmount<StrengthPower>(), 3, ValueProp.Unpowered)];
+        ..MakeCalculatedDamage(14, (card, target) => card.Owner.Creature.GetPowerAmount<StrengthPower>(), 2, ValueProp.Move)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -24,7 +24,6 @@ public class Homerun() : RiasSts2Card(2,
         int totalDamage = (int)DynamicVars.CalculatedDamage.Calculate(play.Target);
         await DamageCmd.Attack(totalDamage)
             .FromCard(this)
-            .Unpowered()
             .Targeting(play.Target)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);

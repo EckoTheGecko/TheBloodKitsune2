@@ -2,6 +2,7 @@
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
@@ -16,6 +17,8 @@ public class SpiritToriiGate() : RiasSts2Card(2,
     CardType.Attack, CardRarity.Rare,
     TargetType.AllEnemies)
 {
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromPowerWithPowerHoverTips<TalismanPower>();
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(12, ValueProp.Move), 
         new PowerVar<TalismanPower>("TalismanPower",1), 
         new PowerVar<VulnerablePower>("VulnerablePower",1)];

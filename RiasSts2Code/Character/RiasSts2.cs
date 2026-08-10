@@ -23,7 +23,7 @@ public class RiasSts2 : PlaceholderCharacterModel
     
     public override Color NameColor => Color;
     public override CharacterGender Gender => CharacterGender.Neutral;
-    public override int StartingHp => 80;
+    public override int StartingHp => 75;
     
 
     public override IEnumerable<CardModel> StartingDeck =>

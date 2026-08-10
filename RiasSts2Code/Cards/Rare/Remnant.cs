@@ -38,7 +38,7 @@ public class Remnant() : RiasSts2Card(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        if (Owner.Creature.CurrentHp >= Owner.Creature.MaxHp / 2)
+        if (Owner.Creature.CurrentHp > Owner.Creature.MaxHp / 2)
             return;
         await DamageCmd.Attack(DynamicVars.Damage.BaseValue)
             .FromCard(this)

@@ -27,7 +27,7 @@ public class GluttonyPower() : RiasSts2Power
         if (!participants.Contains(Owner))
             return;
         Flash();
-        DexterityPower dexterityPower = await PowerCmd.Apply<DexterityPower>(new ThrowingPlayerChoiceContext(), Owner, Amount, Owner, (CardModel) null);
+        TalismanPower talismanPower = await PowerCmd.Apply<TalismanPower>(new ThrowingPlayerChoiceContext(), Owner, Amount, Owner, (CardModel) null);
     }
     
 }

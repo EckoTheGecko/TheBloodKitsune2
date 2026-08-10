@@ -2,6 +2,7 @@
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using RiasSts2.RiasSts2Code.Cards;
@@ -17,6 +18,8 @@ public class RitesOfProtection() : RiasSts2Card(2,
     
     
     public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromPowerWithPowerHoverTips<TalismanPower>();
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<RitesOfProtectionPower>("RitesOfProtectionPower",2)];
 
     protected override async Task OnPlay(

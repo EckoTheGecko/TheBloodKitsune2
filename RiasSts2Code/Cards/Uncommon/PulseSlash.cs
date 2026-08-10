@@ -14,7 +14,8 @@ public class PulseSlash() : RiasSts2Card(1,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AllEnemies)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4, ValueProp.Move), new RepeatVar(2), new PowerVar<VulnerablePower>(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4, ValueProp.Move), new RepeatVar(2), new PowerVar<VulnerablePower>(1),
+    new HpLossVar(1)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -27,6 +28,8 @@ public class PulseSlash() : RiasSts2Card(1,
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
         await PowerCmd.Apply<VulnerablePower>(choiceContext, CombatState.HittableEnemies, this.DynamicVars["VulnerablePower"].BaseValue, this.Owner.Creature, (CardModel) this);
+        await CreatureCmd.Damage(choiceContext, Owner.Creature, DynamicVars.HpLoss.IntValue, ValueProp.Unblockable | ValueProp.Unpowered, null, null);
+
     }
 
     protected override void OnUpgrade()

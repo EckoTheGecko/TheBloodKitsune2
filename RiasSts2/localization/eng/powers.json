@@ -1,6 +1,6 @@
 {
-  "RIASSTS2-TALISMAN_POWER.description": "At the end of your turn [color=#B71D5A]Talismans[/color] explode, each dealing 4 damage to ALL enemies.",
-  "RIASSTS2-TALISMAN_POWER.smartDescription": "#At the end of your turn [color=#B71D5A]Talismans[/color] explode, each dealing 4 damage to ALL enemies.",
+  "RIASSTS2-TALISMAN_POWER.description": "At the end of your turn [color=#B71D5A]Talismans[/color] explode, each dealing 4 damage to ALL enemies. ",
+  "RIASSTS2-TALISMAN_POWER.smartDescription": "#At the end of your turn [color=#B71D5A]Talismans[/color] explode, each dealing !D! damage to ALL enemies.([green]!total![/green])",
   "RIASSTS2-TALISMAN_POWER.title": "Talisman",
 
   "RIASSTS2-BLOOD_MOON_RIAS_POWER.description": "Whenever you play an Attack this turn, gain [blue]3[/blue] block",
@@ -39,8 +39,8 @@
   "RIASSTS2-DEMON_BLOOD_POWER.smartDescription": "#At the end of your turn, your [color=#B71D5A]Talismans[/color] detonate {Amount} more time(s).",
   "RIASSTS2-DEMON_BLOOD_POWER.title": "Demon Blood",
 
-  "RIASSTS2-GLUTTONY_POWER.description": "At the start of your turn, gain 0 Dexterity",
-  "RIASSTS2-GLUTTONY_POWER.smartDescription": "#At the start of your turn, gain {Amount} *Dexterity.",
+  "RIASSTS2-GLUTTONY_POWER.description": "At the start of your turn, gain 0 Talisman",
+  "RIASSTS2-GLUTTONY_POWER.smartDescription": "#At the start of your turn, gain {Amount} [color=#B71D5A]Talisman(s)[/color].",
   "RIASSTS2-GLUTTONY_POWER.title": "Gluttony",
 
   "RIASSTS2-INARIS_BLOOD_POWER.description": "Whenever you lose HP on your turn, gain 0 Talisman.",
@@ -61,5 +61,13 @@
 
   "RIASSTS2-RITES_OF_PROTECTION_POWER.description": "Whenever you gain a [color=#B71D5A]Talisman[/color], give ALL players 0 *Block.",
   "RIASSTS2-RITES_OF_PROTECTION_POWER.smartDescription": "#Whenever you gain a [color=#B71D5A]Talisman[/color], give ALL players {Amount} *Block.",
-  "RIASSTS2-RITES_OF_PROTECTION_POWER.title": "Rites Of Protection"
+  "RIASSTS2-RITES_OF_PROTECTION_POWER.title": "Rites Of Protection",
+
+  "RIASSTS2-CORRUPTED_TALISMANS_POWER.description": "Talismans deal an additional 0 damage when they detonate.",
+  "RIASSTS2-CORRUPTED_TALISMANS_POWER.smartDescription": "#[color=#B71D5A]Talismans[/color] deal an additional {Amount} damage when they detonate.",
+  "RIASSTS2-CORRUPTED_TALISMANS_POWER.title": "Corrupted Talismans",
+
+  "RIASSTS2-MOMENTUM_POWER.description": "At the start of your turn Draw {Amount} card(s).\n*Exhaust {Amount} card(s).\nAdd {Amount} *Divine *Blood *Dagger(s) to your hand.",
+  "RIASSTS2-MOMENTUM_POWER.smartDescription": "#At the start of your turn Draw {Amount} card(s).\n*Exhaust {Amount} card(s).\nAdd {Amount} *Divine *Blood *Dagger(s) to your hand.",
+  "RIASSTS2-MOMENTUM_POWER.title": "Momentum"
 }

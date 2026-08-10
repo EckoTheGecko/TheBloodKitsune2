@@ -28,7 +28,7 @@ public class ConjuredDagger() : RiasSts2Card(0,
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4, ValueProp.Move), new HealVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4, ValueProp.Move), new HealVar(1)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -54,7 +54,7 @@ public class ConjuredDagger() : RiasSts2Card(0,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(1);
+        DynamicVars.Damage.UpgradeValueBy(2);
         DynamicVars.Heal.UpgradeValueBy(1);
     }
 }

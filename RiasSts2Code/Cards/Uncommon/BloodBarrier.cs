@@ -2,6 +2,7 @@
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using RiasSts2.RiasSts2Code.Cards;
 using RiasSts2.RiasSts2Code.Powers;
@@ -13,10 +14,12 @@ public class BloodBarrier() : RiasSts2Card(1,
     TargetType.Self)
 {
 
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromPowerWithPowerHoverTips<TalismanPower>();
+
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         ..MakeCalculatedBlock(0, (card, target) => card.Owner.Creature.GetPowerAmount<TalismanPower>(),2), 
-        new PowerVar<TalismanPower>("TalismanPower",0).WithTooltip("TALISMAN")]; //Here just to add a tooltip
+        new PowerVar<TalismanPower>("TalismanPower",0)]; //Here just to add a tooltip
       
 
     protected override async Task OnPlay(
