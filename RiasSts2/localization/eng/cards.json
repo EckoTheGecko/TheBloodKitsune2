@@ -261,5 +261,20 @@
   "RIASSTS2-CORRUPTED_TALISMANS.title": "Corrupted Talismans",
 
   "RIASSTS2-MOMENTUM.description": "#At the start of your turn Draw !MomentumPower! card(s).\n*Exhaust !MomentumPower! card(s).\nAdd !MomentumPower! *Divine *Blood *Dagger(s) to your hand.",
-  "RIASSTS2-MOMENTUM.title": "Momentum"
+  "RIASSTS2-MOMENTUM.title": "Momentum",
+
+  "RIASSTS2-ACORN.description": "#Whenever you draw a card on your turn, gain !AcornPower! *Block.",
+  "RIASSTS2-ACORN.title": "Acorn",
+
+  "RIASSTS2-PERSEVERANCE.description": "#At the start of your turn, lose 1 HP and gain !PerseverancePower! *Vigor.",
+  "RIASSTS2-PERSEVERANCE.title": "Perseverance",
+
+  "RIASSTS2-VAMPIRISM.description": "#Whenever an Attack deals unblocked damage this turn, heal !VampirismPower! HP+ and gain !VampirismPower! *Block +.",
+  "RIASSTS2-VAMPIRISM.title": "Vampirism",
+
+  "RIASSTS2-RECURSION.description": "#At the start of your turn, lose !RecursionPower! HP.\nIf the first card you play on your turn is a 'Blood' card, play it again.",
+  "RIASSTS2-RECURSION.title": "Recursion",
+
+  "RIASSTS2-ECHOES_OF_THE_PAST.description": "#Play every *Divine *Blood *Dagger in your *Exhaust *Pile on the enemy. (!ExhaustedDaggers!)",
+  "RIASSTS2-ECHOES_OF_THE_PAST.title": "Echoes Of The Past"
 }

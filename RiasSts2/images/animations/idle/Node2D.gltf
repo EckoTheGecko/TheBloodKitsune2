@@ -1,1 +1,0 @@
-{"asset":{"generator":"MegaDot v4.5.1.m.14.mono.custom_build@unknown","version":"2.0"},"extensionsUsed":["GODOT_single_root"],"nodes":[{"children":[1,2],"name":"Node2D"},{"name":"CollisionShape2D"},{"name":"AnimatedSprite2D"}],"scene":0,"scenes":[{"nodes":[0]}]}

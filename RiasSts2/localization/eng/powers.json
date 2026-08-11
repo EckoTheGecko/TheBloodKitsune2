@@ -68,6 +68,22 @@
   "RIASSTS2-CORRUPTED_TALISMANS_POWER.title": "Corrupted Talismans",
 
   "RIASSTS2-MOMENTUM_POWER.description": "At the start of your turn Draw {Amount} card(s).\n*Exhaust {Amount} card(s).\nAdd {Amount} *Divine *Blood *Dagger(s) to your hand.",
-  "RIASSTS2-MOMENTUM_POWER.smartDescription": "#At the start of your turn Draw {Amount} card(s).\n*Exhaust {Amount} card(s).\nAdd {Amount} *Divine *Blood *Dagger(s) to your hand.",
-  "RIASSTS2-MOMENTUM_POWER.title": "Momentum"
+  "RIASSTS2-MOMENTUM_POWER.smartDescription": "#At the start of your turn draw {Amount} card(s).\n*Exhaust {Amount} card(s).\nAdd {Amount} *Divine *Blood *Dagger(s) to your hand.",
+  "RIASSTS2-MOMENTUM_POWER.title": "Momentum",
+
+  "RIASSTS2-ACORN_POWER.description": "Whenever you draw a card, gain 3 Block.",
+  "RIASSTS2-ACORN_POWER.smartDescription": "#Whenever you draw a card, gain {Amount} *Block.",
+  "RIASSTS2-ACORN_POWER.title": "Acorn",
+
+  "RIASSTS2-PERSEVERANCE_POWER.description": "At the start of your turn, lose 1 HP and gain 6 Vigor.",
+  "RIASSTS2-PERSEVERANCE_POWER.smartDescription": "#At the start of your turn, lose !SelfDamage! HP and gain {Amount} *Vigor.",
+  "RIASSTS2-PERSEVERANCE_POWER.title": "Perseverance",
+
+  "RIASSTS2-VAMPIRISM_POWER.description": "Whenever an Attack deals unblocked damage this turn, heal 1 HP.",
+  "RIASSTS2-VAMPIRISM_POWER.smartDescription": "#Whenever an Attack deals unblocked damage this turn, heal {Amount} HP and gain !UpgradedStacks! *Block.",
+  "RIASSTS2-VAMPIRISM_POWER.title": "Vampirism",
+
+  "RIASSTS2-RECURSION_POWER.description": "At the start of your turn, lose 1 HP.\nIf the first card you play on your turn is a 'Blood' card, play it again.",
+  "RIASSTS2-RECURSION_POWER.smartDescription": "#At the start of your turn, lose {Amount} HP.\nIf the first card you play on your turn is a 'Blood' card, play it again.",
+  "RIASSTS2-RECURSION_POWER.title": "Recursion"
 }

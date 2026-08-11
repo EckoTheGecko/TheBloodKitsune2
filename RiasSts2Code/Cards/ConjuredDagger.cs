@@ -24,12 +24,14 @@ public class ConjuredDagger() : RiasSts2Card(0,
 {
     
 
-    protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
+    protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood, RiasTags.DivineDagger];
+    
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4, ValueProp.Move), new HealVar(1)];
 
+    
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
