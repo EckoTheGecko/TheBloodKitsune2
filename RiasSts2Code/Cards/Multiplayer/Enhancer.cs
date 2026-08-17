@@ -24,6 +24,7 @@ public class Enhancer() : RiasSts2Card(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        
         foreach (Creature creature in CombatState.GetTeammatesOf(Owner.Creature).Where(c => c != null && c.IsAlive && c.IsPlayer))
             await PowerCmd.Apply<DexterityPower>(choiceContext, creature, DynamicVars["DexterityPower"].BaseValue, Owner.Creature, this);
     }

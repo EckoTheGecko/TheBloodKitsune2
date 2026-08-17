@@ -33,6 +33,7 @@ public class TalismanPower() : RiasSts2Power
     public override async Task AfterPowerAmountChanged(PlayerChoiceContext choiceContext, PowerModel power, decimal amount, Creature? applier,
         CardModel? cardSource)
     {
+        
         if (amount <= 0 ||  this.CombatState.CurrentSide != this.Owner.Side)
             return;
         if (power is CorruptedTalismansPower && power.Owner == this.Owner )

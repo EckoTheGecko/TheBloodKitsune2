@@ -19,12 +19,15 @@ public class FloraVitae() : RiasSts2Card(
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<ConjuredDagger>();
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => 
+        
+        HoverTipFactory.FromCardWithCardHoverTips<ConjuredDagger>(IsUpgraded);
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         IEnumerable<Creature> allies = CombatState.GetTeammatesOf(Owner.Creature)
             .Where(c => c != null && c.IsAlive && c.IsPlayer);
 

@@ -1,9 +1,105 @@
-[gd_scene load_steps=2 format=3 uid="uid://emtk08yp5w7n"]
+[gd_scene load_steps=10 format=3 uid="uid://emtk08yp5w7n"]
 
-[ext_resource type="Texture2D" uid="uid://dh70wiidq7tc1" path="res://RiasSts2/images/charui/rias_static.png" id="1_dyovm"]
+[ext_resource type="Texture2D" uid="uid://7ps4ege2ivo" path="res://RiasSts2/images/charui/rias_fox_shop.png" id="1_dyovm"]
 
-[node name="rias_static" type="Node2D"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_dyovm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dyovm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_dyovm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_dyovm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_dyovm")
+}],
+"loop": true,
+"name": &"Shop",
+"speed": 5.0
+}]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(9, -175)
-texture = ExtResource("1_dyovm")
+[sub_resource type="Animation" id="Animation_cu333"]
+resource_name = "Shop"
+length = 0.143
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_omung"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tif11"]
+_data = {
+&"RESET": SubResource("Animation_omung"),
+&"Shop": SubResource("Animation_cu333")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_dyovm"]
+animation = &"Shop"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_cu333"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_omung"]
+states/Shop/node = SubResource("AnimationNodeAnimation_dyovm")
+states/Shop/position = Vector2(339, 100)
+transitions = ["Start", "Shop", SubResource("AnimationNodeStateMachineTransition_cu333")]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dyovm"]
+size = Vector2(386, 300.5)
+
+[node name="RiasShop" type="Node2D"]
+
+[node name="Visuals" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Visuals"]
+position = Vector2(0, -1)
+scale = Vector2(1.1250001, 1.125)
+sprite_frames = SubResource("SpriteFrames_dyovm")
+animation = &"Shop"
+flip_h = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Visuals"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_tif11")
+}
+autoplay = "Shop"
+
+[node name="AnimationTree" type="AnimationTree" parent="Visuals/AnimationPlayer"]
+root_node = NodePath("../../..")
+tree_root = SubResource("AnimationNodeStateMachine_omung")
+anim_player = NodePath("..")
+
+[node name="Hitbox" type="Area2D" parent="."]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(-35, 12.75)
+shape = SubResource("RectangleShape2D_dyovm")

@@ -18,6 +18,7 @@ public class Nap() : RiasSts2Card(0, CardType.Skill,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.BaseValue, Owner);
         await CreatureCmd.Heal(Owner.Creature, DynamicVars.Heal.BaseValue);
     }

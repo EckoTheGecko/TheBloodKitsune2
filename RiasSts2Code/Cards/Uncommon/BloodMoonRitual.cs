@@ -27,6 +27,7 @@ public class BloodMoonRitual() : RiasSts2Card(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         
         int taliGained = (int)((CalculatedVar)DynamicVars["ExhaustPile"]).Calculate(Owner.Creature); //Calculate the "ExhaustPile" var and put it in taliGained
         await PowerCmd.Apply<TalismanPower>(choiceContext, this.Owner.Creature, taliGained, this.Owner.Creature, //gain tali equal taliGained

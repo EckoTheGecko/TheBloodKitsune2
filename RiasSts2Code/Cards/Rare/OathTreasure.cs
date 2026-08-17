@@ -23,6 +23,7 @@ public class OathTreasure() : RiasSts2Card(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         int healAmount = Owner.Creature.GetPowerAmount<TalismanPower>();
         await CreatureCmd.Heal(Owner.Creature, healAmount *DynamicVars["mult"].BaseValue);
         await PowerCmd.Remove<TalismanPower>(Owner.Creature);

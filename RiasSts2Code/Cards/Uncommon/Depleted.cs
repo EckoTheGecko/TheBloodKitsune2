@@ -21,7 +21,7 @@ public class Depleted() : RiasSts2Card(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         await CreatureCmd.Damage(choiceContext, Owner.Creature, DynamicVars.HpLoss.IntValue, ValueProp.Unblockable | ValueProp.Unpowered, null, null);
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
         

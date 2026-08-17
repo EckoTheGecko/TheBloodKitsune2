@@ -22,6 +22,7 @@ public class Sealed() : RiasSts2Card(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         List<CardModel> list = PileType.Hand.GetPile(Owner).Cards.ToList();
         decimal cardCount = list.Count;
         foreach (CardModel card in list)

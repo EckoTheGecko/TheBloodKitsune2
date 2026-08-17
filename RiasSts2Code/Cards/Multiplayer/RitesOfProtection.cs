@@ -26,6 +26,7 @@ public class RitesOfProtection() : RiasSts2Card(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        
         await PowerCmd.Apply<RitesOfProtectionPower>(choiceContext, this.Owner.Creature, this.DynamicVars["RitesOfProtectionPower"].BaseValue, this.Owner.Creature, (CardModel) this);
     }
 

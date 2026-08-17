@@ -20,20 +20,20 @@ public class VampirismPower() : RiasSts2Power
     // Track how many stacks were applied by an upgraded card
     public int UpgradedStacks { get; set; }
 
-    public override async Task BeforePowerAmountChanged(
+    public override async Task AfterPowerAmountChanged(
+        PlayerChoiceContext choiceContext,
         PowerModel power, 
         decimal amount, 
-        Creature target, 
         Creature? applier, 
         CardModel? cardSource)
     {
         // verify this only trigger when its vampirism being changed
-        if (power == this && cardSource is Vampirism { IsUpgraded: true })
+        if (power is VampirismPower && cardSource is Vampirism { IsUpgraded: true })
         {
             UpgradedStacks += (int)amount; //if the applying card is upgraded, increment stacks of block
         }
 
-        await base.BeforePowerAmountChanged(power, amount, target, applier, cardSource);
+        await base.AfterPowerAmountChanged(choiceContext, power, amount, applier, cardSource);
     }
 
     public override async Task AfterDamageGiven(

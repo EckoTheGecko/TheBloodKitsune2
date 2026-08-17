@@ -1,11 +1,94 @@
 {
-  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.0-0r.char": "I will destroy the Architect.",
-  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.0-0r.next": "*sigh* Okay, continue..",
-  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.0-1r.ancient": "UGHBLASHHHASDAS",
-  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.0-attack": "DIE! DIE! DIE!",
+  "RIASSTS2-INARI.title": "Inari",
+  "RIASSTS2-INARI.epithet": "The Kitsune Goddess",
+  "RIASSTS2-INARI.talk.ANY.0-0r.ancient": "Welcome, lost soul. Allow me to guide you on your journey.",
+  "RIASSTS2-INARI.talk.firstVisitEver.0-0.ancient": "My, aren't you a curious one? Please, let me guide your path.",
 
-  "RIASSTS2-INARI.epithet": "The Kitsune",
-  "RIASSTS2-INARI.talk.ANY.0-0r.ancient": "Welcome. Please, allow me to guide you on your journey.",
-  "RIASSTS2-INARI.talk.firstVisitEver.0-0.ancient": "Come forth, I shall guide you, lost soul.",
-  "RIASSTS2-INARI.title": "Inari"
+  "RIASSTS2-INARI.talk.RIASSTS2-RIAS_STS2.0-0.ancient": "Poor little kit...\nTrapped your own soul in an attempt to save it from extinction.",
+  "RIASSTS2-INARI.talk.RIASSTS2-RIAS_STS2.0-1.char": "I.. know you?\nStill, you're not the one I'm looking for.",
+  "RIASSTS2-INARI.talk.RIASSTS2-RIAS_STS2.0-2.ancient": "I am not who you seek, but I am your only hope.",
+
+  "RIASSTS2-INARI.talk.RIASSTS2-RIAS_STS2.1-0.char": "Inari, is this YOUR doing?!",
+  "RIASSTS2-INARI.talk.RIASSTS2-RIAS_STS2.1-1.ancient": "I'm not the one who chained you here, little spirit fox.\nSeparating from your master, you trapped your mind into the Spire.",
+  "RIASSTS2-INARI.talk.RIASSTS2-RIAS_STS2.1-2.char": "I'll break free from this place, mark my words.",
+
+  "RIASSTS2-INARI.talk.RIASSTS2-RIAS_STS2.2-0r.char": "I'm sick of seeing your face, false spectre.",
+  "RIASSTS2-INARI.talk.RIASSTS2-RIAS_STS2.2-0r.next": "Continue",
+  "RIASSTS2-INARI.talk.RIASSTS2-RIAS_STS2.2-1r.ancient": "Then do what you do best.\nHunt... kill--",
+  "RIASSTS2-INARI.talk.RIASSTS2-RIAS_STS2.2-1r.next": "Interrupt",
+  "RIASSTS2-INARI.talk.RIASSTS2-RIAS_STS2.2-2r.char": "And steal your property. Got it.",
+
+  "DARV.talk.RIASSTS2-RIAS_STS2.0-0.ancient": "A new face in the Spire! Where did you come from?",
+
+  "DARV.talk.RIASSTS2-RIAS_STS2.1-0r.ancient": "I have the finest wares for ya, feisty canine! None of those clucker buckets though, I'm afraid.",
+  "DARV.talk.RIASSTS2-RIAS_STS2.1-1r.char": "Fox.",
+  "DARV.talk.RIASSTS2-RIAS_STS2.1-2r.ancient": "My bad chief, haha!",
+
+  "DARV.talk.RIASSTS2-RIAS_STS2.2-0.ancient": "Those Talismans ya got, I can tell they're special.",
+  "DARV.talk.RIASSTS2-RIAS_STS2.2-0.next": "Continue",
+  "DARV.talk.RIASSTS2-RIAS_STS2.2-2.ancient": "If, pray tell, you gave up on leaving, you wouldn't mind handing these to your pal Darv, would ya?",
+
+  "NEOW.talk.RIASSTS2-RIAS_STS2.0-0.char": "Where... am I?\n..Who are you?",
+  "NEOW.talk.RIASSTS2-RIAS_STS2.0-1.ancient": "..stray.. soul...\n..sent... to fight... oblivion...",
+
+  "NEOW.talk.RIASSTS2-RIAS_STS2.1-2r.ancient": "..memories.. not lost... for good...\n..fight... retrieve them...",
+
+  "NEOW.talk.RIASSTS2-RIAS_STS2.2-0.ancient": "..kill.. architect..\n...only then... you can... leave..",
+  "NEOW.talk.RIASSTS2-RIAS_STS2.2-1.char": "Nothing I do is working!",
+  "NEOW.talk.RIASSTS2-RIAS_STS2.2-2.ancient": "..don't.. despair...\n..if you.. wish... to escape..",
+
+  "NONUPEIPE.talk.RIASSTS2-RIAS_STS2.0-0.ancient": "Ah, what a daring soul you are!\nCome in, let me take a closer look at your features.",
+  "NONUPEIPE.talk.RIASSTS2-RIAS_STS2.0-1.char": "Taken.",
+  "NONUPEIPE.talk.RIASSTS2-RIAS_STS2.0-2.ancient": "Such an irascible fighter.\nWorry not, I only wish to bestow you my blessing.",
+
+  "NONUPEIPE.talk.RIASSTS2-RIAS_STS2.1-0r.ancient": "Your manners, my dear. You must be hungry.",
+
+  "NONUPEIPE.talk.RIASSTS2-RIAS_STS2.2-0.ancient": "I've prepared a fine gift for you to take back to your master.",
+  "NONUPEIPE.talk.RIASSTS2-RIAS_STS2.2-1.ancient": "Oh, your unyielding devotion is so beautiful to witness.",
+
+  "OROBAS.talk.RIASSTS2-RIAS_STS2.0-0.ancient": "An outsider!? Real or ghost?? Fox or man??!",
+  "OROBAS.talk.RIASSTS2-RIAS_STS2.1-0.ancient": "God servant? What god?? Can god swim?!\nWalk on water? Exciting!",
+  "OROBAS.talk.RIASSTS2-RIAS_STS2.2-0r.ancient": "Take take!! These help go home! Architect help for sure!\nCome back soon?",
+
+  "PAEL.talk.RIASSTS2-RIAS_STS2.0-0.ancient": "You seem... different...",
+  "PAEL.talk.RIASSTS2-RIAS_STS2.1-0r.ancient": "Make yourself comfortable...\nA nap never hurt anyone...",
+  "PAEL.talk.RIASSTS2-RIAS_STS2.1-1r.char": "The Blood Kitsune curls up on a nearby rag.",
+  "PAEL.talk.RIASSTS2-RIAS_STS2.2-0.ancient": "Little drowsy fox...\nI hope my flesh aids your freedom...",
+
+  "TANX.talk.RIASSTS2-RIAS_STS2.0-0.ancient": "WARRIOR! I KNOW STRENGTH WHEN I SEE IT!",
+  "TANX.talk.RIASSTS2-RIAS_STS2.1-0r.ancient": "CLAWS SHARP! BUT WEAPONS ARE SHARPER!!",
+  "TANX.talk.RIASSTS2-RIAS_STS2.2-0.ancient": "FIGHT ME, KITSUNE!!",
+  "TANX.talk.RIASSTS2-RIAS_STS2.2-0.next": "Fight",
+  "TANX.talk.RIASSTS2-RIAS_STS2.2-1.char": "The Blood Kitsune wrestles Tanx.",
+  "TANX.talk.RIASSTS2-RIAS_STS2.2-1.next": "Continue",
+  "TANX.talk.RIASSTS2-RIAS_STS2.2-2.ancient": "MUSCLE STRONG! STRONGER WITH WEAPON!",
+
+  "TEZCATARA.talk.RIASSTS2-RIAS_STS2.0-0.ancient": "Your spirit burns so longingly! Come, you must be hungry!",
+  "TEZCATARA.talk.RIASSTS2-RIAS_STS2.1-0r.ancient": "Your flames are so impatient today.\nStill no sight of your special person?",
+  "TEZCATARA.talk.RIASSTS2-RIAS_STS2.1-1r.ancient": "Ohh, to be motivated by love!",
+  "TEZCATARA.talk.RIASSTS2-RIAS_STS2.2-0.ancient": "Your appetite is quite a sight my dear. A sign of good health.",
+
+  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.0-0r.char": "This time you fall.",
+  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.0-0r.next": "Continue",
+  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.0-1r.ancient": "Return to obscurity.",
+  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.0-attack": "Both",
+  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.1-0r.ancient": "You're not welcome here.",
+  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.1-0r.next": "Threaten",
+  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.1-1r.char": "Killing you will free me from this place.",
+  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.1-1r.next": "Continue",
+  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.1-2r.ancient": "Is that what you think?\nMisguided fool.",
+  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.2-0r.ancient": "Your own mind is your jailer",
+  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.2-0r.next": "Threaten",
+  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.2-1r.char": "I will return to Kain's side!",
+  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.2-1r.next": "Continue",
+  "THE_ARCHITECT.talk.RIASSTS2-RIAS_STS2.2-2r.ancient": "You cannot return, until you're whole again",
+
+  "VAKUU.talk.RIASSTS2-RIAS_STS2.0-0.ancient": "How interesting!\nA demon already under a contract?",
+  "VAKUU.talk.RIASSTS2-RIAS_STS2.0-1.char": "It's not a contract. My pledge is without terms.",
+  "VAKUU.talk.RIASSTS2-RIAS_STS2.0-2.ancient": "That tattoo on your shoulder tells me otherwise.",
+  "VAKUU.talk.RIASSTS2-RIAS_STS2.1-0r.ancient": "I can cut you a better deal than whatever you have going on right now.",
+  "VAKUU.talk.RIASSTS2-RIAS_STS2.2-0.ancient": "Take a closer look, my fiend friend.\nI can restore your memories and in exchange--",
+  "VAKUU.talk.RIASSTS2-RIAS_STS2.2-0.next": "Interrupt",
+  "VAKUU.talk.RIASSTS2-RIAS_STS2.2-1.char": "Save your breath, I know a demon's dealings by heart.\nI'm not stupid enough to make deals with you.",
+  "VAKUU.talk.RIASSTS2-RIAS_STS2.2-2.ancient": "And yet you've agreed to an even worse sentence."
 }

@@ -22,6 +22,7 @@ public class NewlyHuman() : RiasSts2Card(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         await CreatureCmd.LoseBlock(play.Target, play.Target.Block);
         await PowerCmd.Apply<StrengthPower>(choiceContext, play.Target, this.DynamicVars["StrengthPower"].BaseValue, this.Owner.Creature, (CardModel) this);
         await PowerCmd.Apply<WeakPower>(choiceContext, play.Target, this.DynamicVars["WeakPower"].BaseValue, this.Owner.Creature, (CardModel) this);

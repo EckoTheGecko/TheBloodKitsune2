@@ -35,6 +35,7 @@ public class LycorisRadiata() : RiasSts2Card(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         // Counts how many cards this player has played so far this turn (including this card)
         int playsThisTurn = CombatManager.Instance.History.CardPlaysStarted
             .Count(e => e.Actor == Owner.Creature && e.CardPlay.IsFirstInSeries && e.HappenedThisTurn(CombatState));

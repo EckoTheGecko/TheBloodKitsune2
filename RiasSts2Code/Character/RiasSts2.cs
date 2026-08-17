@@ -1,7 +1,10 @@
 ﻿using BaseLib.Abstracts;
+using BaseLib.Patches.UI;
 using BaseLib.Utils.NodeFactories;
 using RiasSts2.RiasSts2Code.Extensions;
 using Godot;
+using MegaCrit.Sts2.Core.Animation;
+using MegaCrit.Sts2.Core.Bindings.MegaSpine;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Helpers;
@@ -13,7 +16,6 @@ using RiasSts2.RiasSts2Code.Relics;
 
 namespace RiasSts2.RiasSts2Code.Character;
 
-  
 
 public class RiasSts2 : PlaceholderCharacterModel
 {
@@ -24,7 +26,6 @@ public class RiasSts2 : PlaceholderCharacterModel
     public override Color NameColor => Color;
     public override CharacterGender Gender => CharacterGender.Neutral;
     public override int StartingHp => 75;
-    
 
     public override IEnumerable<CardModel> StartingDeck =>
     [
@@ -49,30 +50,21 @@ public class RiasSts2 : PlaceholderCharacterModel
     public override RelicPoolModel RelicPool => ModelDb.RelicPool<RiasSts2RelicPool>();
     public override PotionPoolModel PotionPool => ModelDb.PotionPool<RiasSts2PotionPool>();
 
-    /*  PlaceholderCharacterModel will utilize placeholder basegame assets for most of your character assets until you
-        override all the other methods that define those assets.
-        These are just some of the simplest assets, given some placeholders to differentiate your character with.
-        You don't have to, but you're suggested to rename these images. */
-    public override Control CustomIcon
-    {
-        get
-        {
-            var icon = NodeFactory<Control>.CreateFromResource(CustomIconTexturePath);
-            icon.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.FullRect);
-            return icon;
-        }
-    }
+    // Paths using explicit forward slashes and res://
+    public override string CustomIconTexturePath => "res://RiasSts2/images/charui/character_icon_char_rias.png";
+    public override string CustomCharacterSelectIconPath => "res://RiasSts2/images/charui/char_select_rias.png";
+    public override string CustomCharacterSelectLockedIconPath => "res://RiasSts2/images/charui/char_select_char_name_locked.png";
+    public override string CustomMapMarkerPath => "res://RiasSts2/images/charui/map_marker_char_rias.png";
+    public override string CustomIconOutlineTexturePath => "res://RiasSts2/images/charui/character_icon_outline_rias.png";
+    public override string CustomIconPath => "res://RiasSts2/images/charui/sp_rias_icon.tscn";
+    public override string CustomCharacterSelectBg => "res://RiasSts2/images/charui/RiasBG.tscn";
+    public override string CustomVisualPath => "res://RiasSts2/images/animations/rias_anims.tscn";
+    public override RelicIconData? CustomYummyCookie => new RelicIconData("res://RiasSts2/images/relics/big/yummy_cookie_relic_rias.png",
+        "res://RiasSts2/images/relics/yummy_cookie_relic_rias.png",
+        "res://RiasSts2/images/relics/yummy_cookie_relic_outline_rias.png"
+    );
 
-    public override string CustomIconTexturePath => "character_icon_char_rias.png".CharacterUiPath();
-    public override string CustomCharacterSelectIconPath => "char_select_rias.png".CharacterUiPath();
-    public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
-    public override string CustomMapMarkerPath => "map_marker_char_rias.png".CharacterUiPath();
-
-    public override string CustomIconOutlineTexturePath => "character_icon_outline_rias.png".CharacterUiPath();
-    public override string CustomCharacterSelectBg => "RiasBG.tscn".CharacterUiPath();
-    public override string CustomVisualPath => "RiasSts2/images/animations/rias_anims.tscn";
+    public override string CustomMerchantAnimPath => "res://RiasSts2/images/charui/rias_static_merchant.tscn";
+    public override string CustomRestSiteAnimPath => "res://RiasSts2/images/charui/rias_static_rest.tscn";
     
-    
-    // public override string? CustomRestSiteAnimPath => "rias_static_rest.tscn".CharacterUiPath();
-    // public override string? CustomMerchantAnimPath => "rias_static_merchant.tscn".CharacterUiPath();
 }

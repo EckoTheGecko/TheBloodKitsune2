@@ -11,7 +11,7 @@
   "RIASSTS2-BLEED.description": "#Lose 1 HP.\nDraw !C! cards.\nGain !TalismanPower! [color=#B71D5A]Talismans[/color]",
   "RIASSTS2-BLEED.title": "Bleed",
 
-  "RIASSTS2-BLOOD_DAGGER.description": "#Deal !D! damage for each [color=#B71D5A]Talisman[/color] you have.\n Apply !VulnerablePower! *Vulnerable.",
+  "RIASSTS2-BLOOD_DAGGER.description": "#Deal !D! damage for each [color=#B71D5A]Talisman[/color] you have.\nApply !VulnerablePower! *Vulnerable.\n([green]!total![/green])",
   "RIASSTS2-BLOOD_DAGGER.title": "Blood Dagger",
 
   "RIASSTS2-BLOOD_HUNT.description": "#Deal !D! damage to ALL enemies.",
@@ -33,7 +33,7 @@
   "RIASSTS2-IGNIS_SANGUIS.title": "Ignis Sanguis",
 
   "RIASSTS2-FERAL_CLAWS.description": "#Deal !D! damage 4 times.",
-  "RIASSTS2-FERAL_CLAWS.title": "Feral Claws",
+  "RIASSTS2-FERAL_CLAWS.title": "Feral Blood Claws",
 
   "RIASSTS2-LETHAL_CRESCENT.description": "#Lose !HpLoss! HP. Deal !D! damage to ALL enemies.",
   "RIASSTS2-LETHAL_CRESCENT.title": "Lethal Crescent",
@@ -236,10 +236,10 @@
   "RIASSTS2-BLOOD_TETHER.description": "#Gain !TalismanPower! [color=#B71D5A]Talisman[/color].\nApply !WeakPower! *Weak.",
   "RIASSTS2-BLOOD_TETHER.title": "Blood Tether",
 
-  "RIASSTS2-HOMERUN.description": "#Deal !CalculatedDamage! damage.\n*Strength affects this card !ExtraDamage! times.",
-  "RIASSTS2-HOMERUN.title": "Homerun",
+  "RIASSTS2-FIREDANCE.description": "#Deal !D! damage !Repeat! times.\nIf you have *Strength, hits an additional time.",
+  "RIASSTS2-FIREDANCE.title": "Firedance",
 
-  "RIASSTS2-FLORA_VITAE.description": "#Give all players 1 Divine Blood Dagger+++.",
+  "RIASSTS2-FLORA_VITAE.description": "#Give all players 1 *Divine *Blood *Dagger+++.",
   "RIASSTS2-FLORA_VITAE.title": "Flora Vitae",
 
   "RIASSTS2-QUICK_STAB.description": "#Deal !D! damage.\nDraw !C! card(s).",
@@ -260,21 +260,33 @@
   "RIASSTS2-CORRUPTED_TALISMANS.description": "#[color=#B71D5A]Talismans[/color] deal an additional !CorruptedTalismansPower! damage when they detonate.",
   "RIASSTS2-CORRUPTED_TALISMANS.title": "Corrupted Talismans",
 
-  "RIASSTS2-MOMENTUM.description": "#At the start of your turn Draw !MomentumPower! card(s).\n*Exhaust !MomentumPower! card(s).\nAdd !MomentumPower! *Divine *Blood *Dagger(s) to your hand.",
-  "RIASSTS2-MOMENTUM.title": "Momentum",
+  "RIASSTS2-ECLIPSE.description": "#At the start of your turn Draw !MomentumPower! card(s).\n*Exhaust !MomentumPower! card(s).\nAdd !MomentumPower! *Divine *Blood *Dagger(s) to your hand.",
+  "RIASSTS2-ECLIPSE.title": "Eclipse",
 
   "RIASSTS2-ACORN.description": "#Whenever you draw a card on your turn, gain !AcornPower! *Block.",
   "RIASSTS2-ACORN.title": "Acorn",
 
-  "RIASSTS2-PERSEVERANCE.description": "#At the start of your turn, lose 1 HP and gain !PerseverancePower! *Vigor.",
+  "RIASSTS2-PERSEVERANCE.description": "#At the start of your turn gain !PerseverancePower! *Vigor.",
   "RIASSTS2-PERSEVERANCE.title": "Perseverance",
 
   "RIASSTS2-VAMPIRISM.description": "#Whenever an Attack deals unblocked damage this turn, heal !VampirismPower! HP+ and gain !VampirismPower! *Block +.",
   "RIASSTS2-VAMPIRISM.title": "Vampirism",
 
-  "RIASSTS2-RECURSION.description": "#At the start of your turn, lose !RecursionPower! HP.\nIf the first card you play on your turn is a 'Blood' card, play it again.",
+  "RIASSTS2-RECURSION.description": "#If the first card you play on your turn is a 'Blood' card, play it again.",
   "RIASSTS2-RECURSION.title": "Recursion",
 
   "RIASSTS2-ECHOES_OF_THE_PAST.description": "#Play every *Divine *Blood *Dagger in your *Exhaust *Pile on the enemy. (!ExhaustedDaggers!)",
-  "RIASSTS2-ECHOES_OF_THE_PAST.title": "Echoes Of The Past"
+  "RIASSTS2-ECHOES_OF_THE_PAST.title": "Echoes Of The Past",
+
+  "RIASSTS2-DIVINE_ASSISTANCE.description": "#Lose 2 HP at the start of your turn. Create and play a *Divine *Blood *Dagger at a random enemy.",
+  "RIASSTS2-DIVINE_ASSISTANCE.title": "Divine Assistance",
+
+  "RIASSTS2-ABUNDANCE.description": "#Whenever you gain block, gain !AbundancePower! [color=#B71D5A]Talisman(s)[/color].",
+  "RIASSTS2-ABUNDANCE.title": "Abundance",
+
+  "RIASSTS2-SPIRIT_GUIDE.description": "#Retrieve !C! card(s) from your *Exhaust *Pile.",
+  "RIASSTS2-SPIRIT_GUIDE.title": "Spirit Guide",
+  
+  "RIASSTS2-SPIRIT_GUIDE_SELECTION_PROMPT": "Choose a card to move to your hand."
+  
 }

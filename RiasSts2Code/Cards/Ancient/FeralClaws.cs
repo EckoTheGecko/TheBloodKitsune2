@@ -12,6 +12,9 @@ public class FeralClaws() : RiasSts2Card(1,
     CardType.Attack, CardRarity.Ancient, //Ancient means it won't show up anywhere else, ever
     TargetType.AnyEnemy)
 {
+    
+    protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
+
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new DamageVar(5, ValueProp.Move),

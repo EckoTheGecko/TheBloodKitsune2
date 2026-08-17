@@ -30,16 +30,9 @@ public class RecursionPower() : RiasSts2Power
             .Count(e => e.Actor == Owner && e.CardPlay.IsFirstInSeries && e.HappenedThisTurn(CombatState));
 
         if (card.Owner.Creature == this.Owner && card.Tags.Contains(RiasTags.Blood) && playsThisTurn < 1) //if owned by this creature, contains blood tag and is first card played
-            ++playCount;
+            playCount += Amount;
         
         return playCount;
     }
-
-    public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
-    {
-        if (player != Owner.Player)
-            return;
-        this.Flash();
-        await CreatureCmd.Damage(choiceContext, Owner, Amount, ValueProp.Unblockable, this.Owner, (CardModel) null);
-    }
+    
 }

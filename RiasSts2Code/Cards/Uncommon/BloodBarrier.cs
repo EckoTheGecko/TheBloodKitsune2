@@ -26,6 +26,7 @@ public class BloodBarrier() : RiasSts2Card(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.CalculatedBlock.Calculate(Owner.Creature), this.DynamicVars.CalculatedBlock.Props, play);
     }
     protected override void OnUpgrade()

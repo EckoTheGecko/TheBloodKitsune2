@@ -25,7 +25,7 @@ public class MindPalace() : RiasSts2Card(3,
         CardPlay play)
     {
         if (Owner?.PlayerCombatState == null) return;
-
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         // Iterate through all cards currently in the draw pile
         foreach (CardModel card in PileType.Draw.GetPile(Owner).Cards)
         {

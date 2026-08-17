@@ -12,6 +12,9 @@ public class BloodSacrifice() : RiasSts2Card(0,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
+    
+    protected override HashSet<CardTag> CanonicalTags => [RiasTags.Blood];
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [new HpLossVar(2), new EnergyVar(1)];
 
     protected override async Task OnPlay(

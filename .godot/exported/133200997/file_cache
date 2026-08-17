@@ -1,8 +1,8 @@
 res://RiasSts2/images/charui/RiasBG.tscn::4e600bbbd1aef8697523dbdbee268433::1785067893::res://.godot/exported/133200997/export-67ffbf4d865292b61dbc0c60cc63e23b-RiasBG.scn
 res://RiasSts2/images/ancient/inari_scene.tscn::7c3e5adea1f44c3b61222a6600cc1a62::1785362665::res://.godot/exported/133200997/export-f2ab717962c88b722f8522d268d7e60c-inari_scene.scn
 res://RiasSts2/images/charui/rias_static.tscn::7f1f40291fccd36400c1dcbecd8cbdb2::1785341312::res://.godot/exported/133200997/export-063550c3cfcbe3fe6651e01ab0a85934-rias_static.scn
-res://RiasSts2/images/charui/rias_static_merchant.tscn::ad99e707358d34588c28446a6e5e20b7::1785328807::res://.godot/exported/133200997/export-d6569b8698756acf80478c1664f4fd29-rias_static_merchant.scn
-res://RiasSts2/images/charui/rias_static_rest.tscn::8c71eaff7cd52a116003e7d70997ee9d::1785159293::res://.godot/exported/133200997/export-89dc76df7235ff6e65bd96b9f3bc4ac2-rias_static_rest.scn
-res://RiasSts2/images/animations/rias_anims.tscn::d2eb95eb1d903ebe1110674864d70c49::1786468297::res://.godot/exported/133200997/export-be23b0a819f2b48fb5e5e97c03aa90cb-rias_anims.scn
-res://RiasSts2/images/charui/silent_merchant.tscn::19fe8754cc4fd4cf1000f666c9f76709::1786303406::res://.godot/exported/133200997/export-235c1c70e8dd5c459acdb831ba3ef88a-silent_merchant.scn
-res://RiasSts2/images/charui/silent_merchant_skel_data.tres::c6fb067bce067aaa72df3ed12f6e70a7::1786303406::res://.godot/exported/133200997/export-6d828bc7cce73a88931c2f6d92c0673b-silent_merchant_skel_data.res
+res://RiasSts2/images/charui/rias_static_merchant.tscn::a191adad87a2005213ec249e3e0f5f8d::1786912273::res://.godot/exported/133200997/export-d6569b8698756acf80478c1664f4fd29-rias_static_merchant.scn
+res://RiasSts2/images/charui/rias_static_rest.tscn::8609ca0bcaafb53789263bc8512fb6b5::1786913389::res://.godot/exported/133200997/export-89dc76df7235ff6e65bd96b9f3bc4ac2-rias_static_rest.scn
+res://RiasSts2/images/animations/rias_anims.tscn::b6d2efb9fcd48ea54bb0f208801620bb::1786897732::res://.godot/exported/133200997/export-be23b0a819f2b48fb5e5e97c03aa90cb-rias_anims.scn
+res://RiasSts2/images/charui/sp_rias_icon.tscn::b91963f604de6358bf8e31f481b3dcf3::1786905430::res://.godot/exported/133200997/export-e11b9d14ac4d8617e8d597ea1f47da84-sp_rias_icon.scn
+res://RiasSts2/images/charui/ironclad_icon.tscn::139366484da6e2e0c813ae759f474439::1786905398::res://.godot/exported/133200997/export-9ce84f6a02504548e195dc5213306028-ironclad_icon.scn

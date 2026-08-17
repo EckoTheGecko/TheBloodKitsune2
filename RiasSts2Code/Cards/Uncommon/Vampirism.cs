@@ -18,6 +18,7 @@ public class Vampirism() : RiasSts2Card(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         await PowerCmd.Apply<VampirismPower>(choiceContext, Owner.Creature, DynamicVars["VampirismPower"].BaseValue, Owner.Creature, this);
 
     }

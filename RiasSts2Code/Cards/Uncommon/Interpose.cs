@@ -23,6 +23,7 @@ public class Interpose() : RiasSts2Card(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         await PowerCmd.Apply<StrengthPower>(choiceContext, this.Owner.Creature, this.DynamicVars["PlayerStr"].BaseValue, this.Owner.Creature, (CardModel) this);
         foreach (Creature hittableEnemy in (IEnumerable<Creature>) this.CombatState.HittableEnemies)
         {

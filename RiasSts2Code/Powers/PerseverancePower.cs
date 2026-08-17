@@ -22,22 +22,16 @@ public class PerseverancePower() : RiasSts2Power
         PowerStackType.Counter;
 
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar("SelfDamage", 0M, ValueProp.Unblockable | ValueProp.Unpowered)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [];
     
     public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
     {
         if (player != this.Owner.Player)
             return;
         this.Flash();
-        DamageVar dynamicVar = (DamageVar) this.DynamicVars["SelfDamage"];
-        IEnumerable<DamageResult> damageResults = await CreatureCmd.Damage(choiceContext, this.Owner, dynamicVar.BaseValue, dynamicVar.Props, this.Owner, (CardModel) null);
         await PowerCmd.Apply<VigorPower>(choiceContext, Owner, Amount, Owner, null);
     
     }
 
-    public void IncrementSelfDamage()
-    {
-        this.AssertMutable();
-        ++this.DynamicVars["SelfDamage"].BaseValue;
-    }
+    
 }

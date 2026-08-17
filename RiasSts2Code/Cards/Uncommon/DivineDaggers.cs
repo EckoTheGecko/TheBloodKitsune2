@@ -23,7 +23,8 @@ public class DivineDaggers() : RiasSts2Card(1,
       
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
 
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<ConjuredDagger>();
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => 
+        HoverTipFactory.FromCardWithCardHoverTips<ConjuredDagger>(IsUpgraded);
     
 
     protected override async Task OnPlay(

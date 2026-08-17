@@ -1,4 +1,9 @@
+Control
+CollisionShape2D
+Area2D
+AnimationTree
 Node2D
+AnimationPlayer
 AnimatedSprite2D
 Sprite2D
 TextureRect

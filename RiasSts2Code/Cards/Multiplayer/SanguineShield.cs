@@ -26,6 +26,7 @@ public class SanguineShield() : RiasSts2Card(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        
         foreach (Creature creature in CombatState.GetTeammatesOf(Owner.Creature).Where(c => c != null && c.IsAlive && c.IsPlayer))
             await PowerCmd.Apply<PlatingPower>(choiceContext, creature, DynamicVars["PlatingPower"].BaseValue, Owner.Creature, this);
         

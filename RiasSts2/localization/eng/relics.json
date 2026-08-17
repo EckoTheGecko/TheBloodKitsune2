@@ -31,7 +31,11 @@
   "RIASSTS2-CELESTIAL_TALISMANS_RELIC.flavor": "A gift from Inari. Calling the power of the heavens to aid The Regent.",
   "RIASSTS2-CELESTIAL_TALISMANS_RELIC.title": "CelestialTalismansRelic",
 
-  "RIASSTS2-AFTERLIFE_BLOOM_RELIC.description": "#Gain 2 additional [E] on the first turn of combat.",
+  "RIASSTS2-AFTERLIFE_BLOOM_RELIC.description": "#Gain 1 additional [E] on the first three turns of combat.",
   "RIASSTS2-AFTERLIFE_BLOOM_RELIC.flavor": "The symbol of death and afterlife, now guides lost souls through the spirit realm.",
-  "RIASSTS2-AFTERLIFE_BLOOM_RELIC.title": "Afterlife Bloom"
+  "RIASSTS2-AFTERLIFE_BLOOM_RELIC.title": "Afterlife Bloom",
+
+  "RIASSTS2-SEA_GLASS.title": "Kitsune Glass",
+  "SEA_GLASS.RIASSTS2-RIAS_STS2.title": "Kitsune Glass"
+  
 }

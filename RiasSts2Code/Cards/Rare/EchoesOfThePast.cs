@@ -19,6 +19,7 @@ public class EchoesOfThePast() : RiasSts2Card(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
         IEnumerable<CardModel> list = PileType.Exhaust.GetPile(Owner).Cards.Where(c => c.Tags.Contains(RiasTags.DivineDagger)).ToList();
         bool flag = true;

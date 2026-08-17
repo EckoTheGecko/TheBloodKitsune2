@@ -28,6 +28,7 @@ public class BloodMoon() : RiasSts2Card(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
         await PowerCmd.Apply<TalismanPower>(choiceContext, this.Owner.Creature, this.DynamicVars["TalismanPower"].BaseValue, this.Owner.Creature, (CardModel) this);
     }
@@ -35,5 +36,6 @@ public class BloodMoon() : RiasSts2Card(1,
     protected override void OnUpgrade()
     {
         this.DynamicVars.Power<TalismanPower>().UpgradeValueBy(1);
+        DynamicVars.Block.UpgradeValueBy(2);
     }
 }

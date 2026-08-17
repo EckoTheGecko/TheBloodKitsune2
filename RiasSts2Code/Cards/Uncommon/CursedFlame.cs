@@ -23,6 +23,7 @@ public class CursedFlame() : RiasSts2Card(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         int amount = Owner.Creature.GetPowerAmount<TalismanPower>(); //get current talismans amount
         await PowerCmd.Apply<TalismanNextTurnPower>(choiceContext, this.Owner.Creature, amount, this.Owner.Creature, (CardModel) this);
     } // add TalismanNextTurnPower equal to current talismans, which adds talis equal to how many stack exist

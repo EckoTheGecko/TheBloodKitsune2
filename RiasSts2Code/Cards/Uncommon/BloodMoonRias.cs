@@ -22,6 +22,7 @@ public class BloodMoonRias() : RiasSts2Card(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         await PowerCmd.Apply<BloodMoonRiasPower>(choiceContext, this.Owner.Creature, this.DynamicVars["BloodMoonRiasPower"].BaseValue, this.Owner.Creature, (CardModel) this);
     }
 

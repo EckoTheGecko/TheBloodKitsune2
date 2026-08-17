@@ -27,6 +27,7 @@ public class HyperSenses() : RiasSts2Card(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         IReadOnlyList<Creature> enemies = this.CombatState.HittableEnemies.ToList();
         
         decimal totalBlock = this.DynamicVars.Block.IntValue * enemies.Count;

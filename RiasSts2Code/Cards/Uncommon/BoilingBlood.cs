@@ -24,6 +24,7 @@ public class BoilingBlood() : RiasSts2Card(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         int taliAmount = Owner.Creature.GetPowerAmount<TalismanPower>();
         await PowerCmd.Apply<StrengthPower>(choiceContext, Owner.Creature, taliAmount, Owner.Creature, this);
     }

@@ -24,6 +24,7 @@ public class CeremonialSash() : RiasSts2Card(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         await PlayerCmd.GainEnergy(DynamicVars.Energy.BaseValue, Owner);
         await PowerCmd.Apply<TalismanPower>(choiceContext, this.Owner.Creature, this.DynamicVars["TalismanPower"].BaseValue, this.Owner.Creature, (CardModel) this);
         await CardPileCmd.Draw(choiceContext,DynamicVars.Cards.BaseValue, this.Owner);

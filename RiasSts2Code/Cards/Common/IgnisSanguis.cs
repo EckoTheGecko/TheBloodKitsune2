@@ -12,7 +12,7 @@ public class IgnisSanguis() : RiasSts2Card(1,
     CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10,ValueProp.Move), new HpLossVar("HpLoss",2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(15,ValueProp.Move), new HpLossVar("HpLoss",1)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

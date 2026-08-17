@@ -12,7 +12,7 @@ public class LethalCrescent() : RiasSts2Card(2,
     CardType.Attack, CardRarity.Common,
     TargetType.AllEnemies)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10, ValueProp.Move), new HpLossVar("HpLoss",3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(12, ValueProp.Move), new HpLossVar("HpLoss",2)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

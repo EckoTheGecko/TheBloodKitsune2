@@ -76,14 +76,22 @@
   "RIASSTS2-ACORN_POWER.title": "Acorn",
 
   "RIASSTS2-PERSEVERANCE_POWER.description": "At the start of your turn, lose 1 HP and gain 6 Vigor.",
-  "RIASSTS2-PERSEVERANCE_POWER.smartDescription": "#At the start of your turn, lose !SelfDamage! HP and gain {Amount} *Vigor.",
+  "RIASSTS2-PERSEVERANCE_POWER.smartDescription": "#At the start of your turn gain {Amount} *Vigor.",
   "RIASSTS2-PERSEVERANCE_POWER.title": "Perseverance",
 
-  "RIASSTS2-VAMPIRISM_POWER.description": "Whenever an Attack deals unblocked damage this turn, heal 1 HP.",
-  "RIASSTS2-VAMPIRISM_POWER.smartDescription": "#Whenever an Attack deals unblocked damage this turn, heal {Amount} HP and gain !UpgradedStacks! *Block.",
+  "RIASSTS2-VAMPIRISM_POWER.description": "Whenever an Attack deals unblocked damage this turn, heal 1 HP and gain 0 Block.",
+  "RIASSTS2-VAMPIRISM_POWER.smartDescription": "#Whenever an Attack deals unblocked damage this turn, heal {Amount} HP and gain {Amount} *Block.",
   "RIASSTS2-VAMPIRISM_POWER.title": "Vampirism",
 
-  "RIASSTS2-RECURSION_POWER.description": "At the start of your turn, lose 1 HP.\nIf the first card you play on your turn is a 'Blood' card, play it again.",
-  "RIASSTS2-RECURSION_POWER.smartDescription": "#At the start of your turn, lose {Amount} HP.\nIf the first card you play on your turn is a 'Blood' card, play it again.",
-  "RIASSTS2-RECURSION_POWER.title": "Recursion"
+  "RIASSTS2-RECURSION_POWER.description": "If the first card you play on your turn is a 'Blood' card, play it again.",
+  "RIASSTS2-RECURSION_POWER.smartDescription": "If the first card you play on your turn is a 'Blood' card, play it again.",
+  "RIASSTS2-RECURSION_POWER.title": "Recursion",
+
+  "RIASSTS2-DIVINE_ASSISTANCE_POWER.description": "Lose 2 HP at the start of your turn. Create and play a Divine Blood Dagger at a random enemy.",
+  "RIASSTS2-DIVINE_ASSISTANCE_POWER.smartDescription": "#Lose 2 HP at the start of your turn. Create and play {Amount} *Divine *Blood *Dagger(s) at a random enemy.",
+  "RIASSTS2-DIVINE_ASSISTANCE_POWER.title": "Divine Assistance",
+
+  "RIASSTS2-ABUNDANCE_POWER.description": "Whenever you gain block, gain 0 Talisman.",
+  "RIASSTS2-ABUNDANCE_POWER.smartDescription": "#Whenever you gain block, gain {Amount} [color=#B71D5A]Talisman(s)[/color].",
+  "RIASSTS2-ABUNDANCE_POWER.title": "Abundance"
 }

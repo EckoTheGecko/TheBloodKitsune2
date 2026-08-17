@@ -22,6 +22,7 @@ public class Ravaging() : RiasSts2Card(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         await PowerCmd.Apply<RavagingPower>(choiceContext, Owner.Creature, DynamicVars["RavagingPower"].BaseValue, Owner.Creature, this);
 
     }

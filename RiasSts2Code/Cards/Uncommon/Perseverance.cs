@@ -23,8 +23,8 @@ public class Perseverance() : RiasSts2Card(1,
     {
         NPowerUpVfx.CreateNormal(this.Owner.Creature);
         await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
-        (await PowerCmd.Apply<PerseverancePower>(choiceContext, this.Owner.Creature, this.DynamicVars["PerseverancePower"].BaseValue, this.Owner.Creature, (CardModel) this))?.IncrementSelfDamage();
-    } //^applies 6 perseverance, and increments the selfdamage the power deals by 1, resetting when combat ends.
+        await PowerCmd.Apply<PerseverancePower>(choiceContext, this.Owner.Creature, this.DynamicVars["PerseverancePower"].BaseValue, this.Owner.Creature, (CardModel) this);
+    } 
 
     protected override void OnUpgrade()
     {

@@ -18,6 +18,7 @@ public class ServantsTrinket() : RiasSts2Card(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         CardModel cardModel = (await CardPileCmd.Draw(choiceContext, 1, Owner)).FirstOrDefault();
         if (cardModel != null && cardModel.Keywords.Contains(CardKeyword.Exhaust))
             await CardCmd.AutoPlay(choiceContext, cardModel, null);

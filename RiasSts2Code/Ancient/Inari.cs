@@ -12,6 +12,8 @@ using RiasSts2.RiasSts2Code.Relics;
 namespace RiasSts2.RiasSts2Code.Ancient;
 
 
+
+
 public class Inari : CustomAncientModel
 {
     protected override OptionPools MakeOptionPools => new OptionPools(
@@ -34,9 +36,10 @@ public class Inari : CustomAncientModel
 
     private WeightedList<AncientOption> GetClassSpecificPool3()
     {
-        CharacterModel characterModel = this.Owner.Character; //get current class
+        // Safely retrieve the CharacterModel without throwing NullReferenceException
+        CharacterModel? characterModel = this.Owner?.Character;
 
-        // switch to correct class and return related relic
+        // Switch on characterModel (will jump straight to 'default' if characterModel is null)
         switch (characterModel)
         {
             case Ironclad:
@@ -58,7 +61,7 @@ public class Inari : CustomAncientModel
                 return [AncientOption<TalismansRelic>()];
 
             default:
-                // Fallback relic option if unhandled or null
+                // Fallback relic option if characterModel is null or unhandled
                 return [AncientOption<TalismansRelic>()];
         }
     }
